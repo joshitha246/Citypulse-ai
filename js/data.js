@@ -435,17 +435,22 @@ const CityPulseData = (() => {
     };
   }
 
-  // ── State Management ──
+  // ── State Management & Backend Sync ──
+  const BACKEND_URL = window.location.origin.includes('3000') 
+    ? window.location.origin 
+    : 'http://localhost:3000';
+
   let state = {
     incidents: [],
     notifications: [],
     autonomousMode: true,
     autonomousLog: [],
     division: 'Bangalore Urban',
-    theme: 'dark'
+    theme: 'dark',
+    connectedToBackend: false
   };
 
-  // Load from localStorage or generate fresh
+  // Load from Backend API or fall back to localStorage
   function init() {
     const saved = localStorage.getItem('citypulse_data');
     if (saved) {
@@ -457,7 +462,29 @@ const CityPulseData = (() => {
     } else {
       resetData();
     }
+
+    // Try background sync with Node.js backend server
+    syncWithBackend();
+
     return state;
+  }
+
+  async function syncWithBackend() {
+    try {
+      const res = await fetch(`${BACKEND_URL}/api/incidents`);
+      if (res.ok) {
+        const data = await res.json();
+        if (data.success && Array.isArray(data.incidents)) {
+          state.incidents = data.incidents;
+          state.connectedToBackend = true;
+          save();
+          // Dispatch custom event for UI updates
+          window.dispatchEvent(new CustomEvent('citypulse_backend_synced'));
+        }
+      }
+    } catch (e) {
+      state.connectedToBackend = false;
+    }
   }
 
   function save() {
@@ -475,6 +502,9 @@ const CityPulseData = (() => {
       { time: getTimeAgo(90), action: 'Auto-resolved 3 street light complaints (BESCOM confirmed repair)', result: 'Updated status & notified citizens' }
     ];
     save();
+
+    // Trigger backend reset if connected
+    fetch(`${BACKEND_URL}/api/reset`, { method: 'POST' }).catch(() => {});
   }
 
   function getState() { return state; }
@@ -493,6 +523,22 @@ const CityPulseData = (() => {
       incidentId: incident.id
     });
     save();
+
+    // Post to backend API
+    fetch(`${BACKEND_URL}/api/incidents`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        type: incident.type,
+        description: incident.description,
+        wardId: incident.ward,
+        citizenName: incident.citizen,
+        citizenPhone: incident.citizenPhone,
+        lat: incident.lat,
+        lng: incident.lng
+      })
+    }).catch(() => {});
+
     return incident;
   }
 
@@ -501,6 +547,14 @@ const CityPulseData = (() => {
     if (idx !== -1) {
       Object.assign(state.incidents[idx], updates, { updatedAt: new Date().toISOString() });
       save();
+
+      // Put to backend API
+      fetch(`${BACKEND_URL}/api/incidents/${id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(updates)
+      }).catch(() => {});
+
       return state.incidents[idx];
     }
     return null;
