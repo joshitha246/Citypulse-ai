@@ -7,7 +7,9 @@ function renderMyComplaints() {
   const incidents = CityPulseData.getIncidents();
 
   // Get citizen's own complaints (submitted by this user + some seed data for demo)
-  const myComplaints = incidents.filter(i => i.citizenSubmitted || Math.random() > 0.7).slice(0, 8);
+  const myComplaints = incidents
+    .filter(i => i.citizenSubmitted)
+    .slice(0, 8);
 
   if (myComplaints.length === 0) {
     container.innerHTML = `
