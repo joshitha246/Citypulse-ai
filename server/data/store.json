@@ -1,0 +1,4914 @@
+{
+  "incidents": [
+    {
+      "id": "INC-2026-068",
+      "type": "fire",
+      "typeLabel": "Fire",
+      "typeIcon": "🔥",
+      "typeColor": "#EF4444",
+      "priority": "critical",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 11,
+      "wardName": "BTM Layout",
+      "lat": 12.915858191266349,
+      "lng": 77.60690712460834,
+      "description": "Electrical fire in apartment complex, smoke visible from 3rd floor",
+      "citizen": "Akash Jain",
+      "citizenPhone": "+91 95084 93005",
+      "department": "fire-dept",
+      "departmentName": "Fire Department",
+      "createdAt": "2026-07-24T18:50:53.864Z",
+      "updatedAt": "2026-07-24T18:50:53.864Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T18:50:53.864Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 97,
+      "eta": "4 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-067",
+      "type": "traffic",
+      "typeLabel": "Traffic Signal Issue",
+      "typeIcon": "🚦",
+      "typeColor": "#F59E0B",
+      "priority": "medium",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 15,
+      "wardName": "JP Nagar",
+      "lat": 12.902054790395365,
+      "lng": 77.58332378297736,
+      "description": "Traffic signal not working at major junction, causing jams during peak hours",
+      "citizen": "Sunita Bhat",
+      "citizenPhone": "+91 81308 19220",
+      "department": "traffic-police",
+      "departmentName": "Traffic Police",
+      "createdAt": "2026-07-24T18:49:53.850Z",
+      "updatedAt": "2026-07-24T18:49:53.850Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T18:49:53.850Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 93,
+      "eta": "3 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-066",
+      "type": "fire",
+      "typeLabel": "Fire",
+      "typeIcon": "🔥",
+      "typeColor": "#EF4444",
+      "priority": "critical",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 3,
+      "wardName": "Koramangala",
+      "lat": 13.032364319116342,
+      "lng": 77.51410890402771,
+      "description": "Electrical fire in apartment complex, smoke visible from 3rd floor",
+      "citizen": "Akash Jain",
+      "citizenPhone": "+91 81717 56841",
+      "department": "fire-dept",
+      "departmentName": "Fire Department",
+      "createdAt": "2026-07-24T18:48:53.869Z",
+      "updatedAt": "2026-07-24T18:48:53.869Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T18:48:53.869Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 93,
+      "eta": "3 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-065",
+      "type": "flooding",
+      "typeLabel": "Flooding",
+      "typeIcon": "🌊",
+      "typeColor": "#06B6D4",
+      "priority": "high",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 1,
+      "wardName": "Mahadevapura",
+      "lat": 12.99,
+      "lng": 77.69,
+      "description": "Severe waterlogging under the main highway flyover, cars are submerged.",
+      "citizen": "John Doe",
+      "citizenPhone": "+91 99999 88888",
+      "department": "bbmp-storm",
+      "departmentName": "BBMP Storm Water",
+      "createdAt": "2026-07-24T18:48:42.017Z",
+      "updatedAt": "2026-07-24T18:48:42.023Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T18:48:42.023Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 99,
+      "eta": "3 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-064",
+      "type": "medical",
+      "typeLabel": "Medical Emergency",
+      "typeIcon": "🚑",
+      "typeColor": "#F43F5E",
+      "priority": "critical",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 14,
+      "wardName": "Marathahalli",
+      "lat": 12.96122024569358,
+      "lng": 77.69785966871285,
+      "description": "Road accident with injuries, two-wheeler collision with auto",
+      "citizen": "Pooja Nair",
+      "citizenPhone": "+91 78837 68972",
+      "department": "medical",
+      "departmentName": "Medical Emergency",
+      "createdAt": "2026-07-24T18:47:53.857Z",
+      "updatedAt": "2026-07-24T18:47:53.857Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T18:47:53.857Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 90,
+      "eta": "4 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-063",
+      "type": "streetlight",
+      "typeLabel": "Street Light Failure",
+      "typeIcon": "💡",
+      "typeColor": "#F59E0B",
+      "priority": "low",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 1,
+      "wardName": "Mahadevapura",
+      "lat": 12.994182624777254,
+      "lng": 77.69330745406884,
+      "description": "Flickering street light near school, dangerous for pedestrians at night",
+      "citizen": "Lakshmi Devi",
+      "citizenPhone": "+91 91435 48941",
+      "department": "bescom",
+      "departmentName": "BESCOM (Electricity)",
+      "createdAt": "2026-07-24T18:46:53.846Z",
+      "updatedAt": "2026-07-24T18:46:53.846Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T18:46:53.846Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 97,
+      "eta": "2 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-062",
+      "type": "sewage",
+      "typeLabel": "Sewage Overflow",
+      "typeIcon": "🚰",
+      "typeColor": "#8B5CF6",
+      "priority": "high",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 2,
+      "wardName": "Whitefield",
+      "lat": 12.97107963632663,
+      "lng": 77.75232706639045,
+      "description": "Open drain not covered, child fell in yesterday",
+      "citizen": "Divya Hegde",
+      "citizenPhone": "+91 79669 20013",
+      "department": "bwssb",
+      "departmentName": "BWSSB (Water Supply)",
+      "createdAt": "2026-07-24T18:45:53.847Z",
+      "updatedAt": "2026-07-24T18:45:53.847Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T18:45:53.847Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 99,
+      "eta": "3 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-061",
+      "type": "medical",
+      "typeLabel": "Medical Emergency",
+      "typeIcon": "🚑",
+      "typeColor": "#F43F5E",
+      "priority": "critical",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 3,
+      "wardName": "Koramangala",
+      "lat": 12.901147586388552,
+      "lng": 77.62200299177184,
+      "description": "Road accident with injuries, two-wheeler collision with auto",
+      "citizen": "Deepa Murthy",
+      "citizenPhone": "+91 91645 63105",
+      "department": "medical",
+      "departmentName": "Medical Emergency",
+      "createdAt": "2026-07-24T18:44:53.838Z",
+      "updatedAt": "2026-07-24T18:44:53.838Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T18:44:53.838Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 99,
+      "eta": "3 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-060",
+      "type": "flooding",
+      "typeLabel": "Flooding",
+      "typeIcon": "🌊",
+      "typeColor": "#06B6D4",
+      "priority": "high",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 15,
+      "wardName": "JP Nagar",
+      "lat": 12.904113150570124,
+      "lng": 77.59021695756111,
+      "description": "Underpass completely flooded, traffic diverted",
+      "citizen": "Kavitha Patil",
+      "citizenPhone": "+91 76585 74138",
+      "department": "bbmp-storm",
+      "departmentName": "BBMP Storm Water",
+      "createdAt": "2026-07-24T18:43:53.843Z",
+      "updatedAt": "2026-07-24T18:43:53.843Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T18:43:53.843Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 90,
+      "eta": "3 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-059",
+      "type": "road-damage",
+      "typeLabel": "Road Damage",
+      "typeIcon": "🚧",
+      "typeColor": "#F97316",
+      "priority": "medium",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 13,
+      "wardName": "Electronic City",
+      "lat": 12.835334077886179,
+      "lng": 77.67940168965399,
+      "description": "Cave-in near construction site, road barricaded by locals",
+      "citizen": "Sunita Bhat",
+      "citizenPhone": "+91 87420 92093",
+      "department": "bbmp-road",
+      "departmentName": "BBMP Road Maintenance",
+      "createdAt": "2026-07-24T18:42:53.855Z",
+      "updatedAt": "2026-07-24T18:42:53.855Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T18:42:53.855Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 98,
+      "eta": "3 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-058",
+      "type": "streetlight",
+      "typeLabel": "Street Light Failure",
+      "typeIcon": "💡",
+      "typeColor": "#F59E0B",
+      "priority": "low",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 9,
+      "wardName": "Yelahanka",
+      "lat": 13.098108448407839,
+      "lng": 77.59280537921043,
+      "description": "Street light pole tilting dangerously after storm",
+      "citizen": "Ganesh Acharya",
+      "citizenPhone": "+91 81051 86825",
+      "department": "bescom",
+      "departmentName": "BESCOM (Electricity)",
+      "createdAt": "2026-07-24T18:41:53.852Z",
+      "updatedAt": "2026-07-24T18:41:53.852Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T18:41:53.852Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 92,
+      "eta": "3 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-057",
+      "type": "garbage",
+      "typeLabel": "Garbage Overflow",
+      "typeIcon": "🗑️",
+      "typeColor": "#10B981",
+      "priority": "medium",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 15,
+      "wardName": "JP Nagar",
+      "lat": 12.902436627055758,
+      "lng": 77.58456238530853,
+      "description": "Garbage not collected for 5 days, pile-up near residential area",
+      "citizen": "Rajesh Naidu",
+      "citizenPhone": "+91 78199 17195",
+      "department": "bbmp-sanitation",
+      "departmentName": "BBMP Sanitation",
+      "createdAt": "2026-07-24T18:40:53.846Z",
+      "updatedAt": "2026-07-24T18:40:53.846Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T18:40:53.846Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 98,
+      "eta": "3 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-056",
+      "type": "road-damage",
+      "typeLabel": "Road Damage",
+      "typeIcon": "🚧",
+      "typeColor": "#F97316",
+      "priority": "medium",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 10,
+      "wardName": "Hebbal",
+      "lat": 13.03998304324631,
+      "lng": 77.59993183848528,
+      "description": "Manhole cover missing on busy intersection",
+      "citizen": "Deepa Murthy",
+      "citizenPhone": "+91 98326 20320",
+      "department": "bbmp-road",
+      "departmentName": "BBMP Road Maintenance",
+      "createdAt": "2026-07-24T18:39:53.832Z",
+      "updatedAt": "2026-07-24T18:39:53.832Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T18:39:53.832Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 96,
+      "eta": "3 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-055",
+      "type": "road-damage",
+      "typeLabel": "Road Damage",
+      "typeIcon": "🚧",
+      "typeColor": "#F97316",
+      "priority": "medium",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 3,
+      "wardName": "Koramangala",
+      "lat": 13.030000336357256,
+      "lng": 77.5158344529016,
+      "description": "Manhole cover missing on busy intersection",
+      "citizen": "Mohammed Ismail",
+      "citizenPhone": "+91 91633 84146",
+      "department": "bbmp-road",
+      "departmentName": "BBMP Road Maintenance",
+      "createdAt": "2026-07-24T18:38:23.841Z",
+      "updatedAt": "2026-07-24T18:38:23.841Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T18:38:23.841Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 91,
+      "eta": "2 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-054",
+      "type": "fire",
+      "typeLabel": "Fire",
+      "typeIcon": "🔥",
+      "typeColor": "#EF4444",
+      "priority": "critical",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 2,
+      "wardName": "Whitefield",
+      "lat": 12.972242392497993,
+      "lng": 77.74846103295312,
+      "description": "Kitchen fire at restaurant, staff evacuated safely",
+      "citizen": "Venkatesh Iyer",
+      "citizenPhone": "+91 99340 56901",
+      "department": "fire-dept",
+      "departmentName": "Fire Department",
+      "createdAt": "2026-07-24T18:37:33.847Z",
+      "updatedAt": "2026-07-24T18:37:33.847Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T18:37:33.847Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 93,
+      "eta": "2 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-053",
+      "type": "fire",
+      "typeLabel": "Fire",
+      "typeIcon": "🔥",
+      "typeColor": "#EF4444",
+      "priority": "critical",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 11,
+      "wardName": "BTM Layout",
+      "lat": 12.913919459374869,
+      "lng": 77.6144515382688,
+      "description": "Loudspeaker being used beyond permitted hours",
+      "citizen": "Deepa Murthy",
+      "citizenPhone": "+91 91644 23121",
+      "department": "fire-dept",
+      "departmentName": "Fire Department",
+      "createdAt": "2026-07-24T18:36:43.832Z",
+      "updatedAt": "2026-07-24T18:36:43.832Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T18:36:43.832Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 99,
+      "eta": "3 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-052",
+      "type": "sewage",
+      "typeLabel": "Sewage Overflow",
+      "typeIcon": "🚰",
+      "typeColor": "#8B5CF6",
+      "priority": "high",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 13,
+      "wardName": "Electronic City",
+      "lat": 12.843960388046488,
+      "lng": 77.68010337219795,
+      "description": "Sewage overflowing on main road, health hazard for residents",
+      "citizen": "Ganesh Acharya",
+      "citizenPhone": "+91 80905 44406",
+      "department": "bwssb",
+      "departmentName": "BWSSB (Water Supply)",
+      "createdAt": "2026-07-24T18:35:53.843Z",
+      "updatedAt": "2026-07-24T18:35:53.843Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T18:35:53.843Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 97,
+      "eta": "4 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-051",
+      "type": "sewage",
+      "typeLabel": "Sewage Overflow",
+      "typeIcon": "🚰",
+      "typeColor": "#8B5CF6",
+      "priority": "high",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 4,
+      "wardName": "Indiranagar",
+      "lat": 12.980564160016177,
+      "lng": 77.64116890406697,
+      "description": "Open drain not covered, child fell in yesterday",
+      "citizen": "Suresh Gowda",
+      "citizenPhone": "+91 93870 41584",
+      "department": "bwssb",
+      "departmentName": "BWSSB (Water Supply)",
+      "createdAt": "2026-07-24T18:35:03.835Z",
+      "updatedAt": "2026-07-24T18:35:03.835Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T18:35:03.835Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 91,
+      "eta": "2 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-050",
+      "type": "fire",
+      "typeLabel": "Fire",
+      "typeIcon": "🔥",
+      "typeColor": "#EF4444",
+      "priority": "critical",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 2,
+      "wardName": "Whitefield",
+      "lat": 12.9744718117167,
+      "lng": 77.75307453621065,
+      "description": "Factory noise disturbing residential area throughout the day",
+      "citizen": "Pooja Nair",
+      "citizenPhone": "+91 71712 53008",
+      "department": "fire-dept",
+      "departmentName": "Fire Department",
+      "createdAt": "2026-07-24T18:34:13.834Z",
+      "updatedAt": "2026-07-24T18:34:13.834Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T18:34:13.834Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 94,
+      "eta": "4 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-049",
+      "type": "sewage",
+      "typeLabel": "Sewage Overflow",
+      "typeIcon": "🚰",
+      "typeColor": "#8B5CF6",
+      "priority": "high",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 8,
+      "wardName": "Basavanagudi",
+      "lat": 12.946268010660642,
+      "lng": 77.57020393155393,
+      "description": "Open drain not covered, child fell in yesterday",
+      "citizen": "Divya Hegde",
+      "citizenPhone": "+91 84523 56696",
+      "department": "bwssb",
+      "departmentName": "BWSSB (Water Supply)",
+      "createdAt": "2026-07-24T18:32:55.385Z",
+      "updatedAt": "2026-07-24T18:32:55.385Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T18:32:55.385Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 91,
+      "eta": "3 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-048",
+      "type": "traffic",
+      "typeLabel": "Traffic Signal Issue",
+      "typeIcon": "🚦",
+      "typeColor": "#F59E0B",
+      "priority": "medium",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 3,
+      "wardName": "Koramangala",
+      "lat": 12.90500155495184,
+      "lng": 77.61754674258736,
+      "description": "Traffic signal not working at major junction, causing jams during peak hours",
+      "citizen": "Meena Kumari",
+      "citizenPhone": "+91 90084 36982",
+      "department": "traffic-police",
+      "departmentName": "Traffic Police",
+      "createdAt": "2026-07-24T17:42:52.072Z",
+      "updatedAt": "2026-07-24T17:42:52.072Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T17:42:52.072Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 91,
+      "eta": "4 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-047",
+      "type": "sewage",
+      "typeLabel": "Sewage Overflow",
+      "typeIcon": "🚰",
+      "typeColor": "#8B5CF6",
+      "priority": "high",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 3,
+      "wardName": "Koramangala",
+      "lat": 12.924209522318483,
+      "lng": 77.54995592086492,
+      "description": "Drain blockage causing sewage backup into homes",
+      "citizen": "Divya Hegde",
+      "citizenPhone": "+91 97561 16523",
+      "department": "bwssb",
+      "departmentName": "BWSSB (Water Supply)",
+      "createdAt": "2026-07-24T17:42:09.832Z",
+      "updatedAt": "2026-07-24T17:42:09.832Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T17:42:09.832Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 96,
+      "eta": "4 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-046",
+      "type": "streetlight",
+      "typeLabel": "Street Light Failure",
+      "typeIcon": "💡",
+      "typeColor": "#F59E0B",
+      "priority": "low",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 3,
+      "wardName": "Koramangala",
+      "lat": 12.923020709285609,
+      "lng": 77.54789660630757,
+      "description": "New LED lights installed but not functioning, wiring issue suspected",
+      "citizen": "Lakshmi Devi",
+      "citizenPhone": "+91 86524 83259",
+      "department": "bescom",
+      "departmentName": "BESCOM (Electricity)",
+      "createdAt": "2026-07-24T17:40:53.875Z",
+      "updatedAt": "2026-07-24T17:40:53.875Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T17:40:53.875Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 97,
+      "eta": "3 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-045",
+      "type": "traffic",
+      "typeLabel": "Traffic Signal Issue",
+      "typeIcon": "🚦",
+      "typeColor": "#F59E0B",
+      "priority": "medium",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 3,
+      "wardName": "Koramangala",
+      "lat": 12.900414112223139,
+      "lng": 77.61770493063199,
+      "description": "Signal timing incorrect, green phase too short for main road",
+      "citizen": "Rajesh Naidu",
+      "citizenPhone": "+91 93667 51301",
+      "department": "traffic-police",
+      "departmentName": "Traffic Police",
+      "createdAt": "2026-07-24T17:39:53.835Z",
+      "updatedAt": "2026-07-24T17:39:53.835Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T17:39:53.835Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 90,
+      "eta": "3 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-044",
+      "type": "streetlight",
+      "typeLabel": "Street Light Failure",
+      "typeIcon": "💡",
+      "typeColor": "#F59E0B",
+      "priority": "low",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 13,
+      "wardName": "Electronic City",
+      "lat": 12.841465927383194,
+      "lng": 77.67919075387965,
+      "description": "Entire street dark for 3 days, multiple lights not working",
+      "citizen": "Divya Hegde",
+      "citizenPhone": "+91 92028 43366",
+      "department": "bescom",
+      "departmentName": "BESCOM (Electricity)",
+      "createdAt": "2026-07-24T17:38:53.837Z",
+      "updatedAt": "2026-07-24T17:38:53.837Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T17:38:53.837Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 98,
+      "eta": "2 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-043",
+      "type": "flooding",
+      "typeLabel": "Flooding",
+      "typeIcon": "🌊",
+      "typeColor": "#06B6D4",
+      "priority": "high",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 4,
+      "wardName": "Indiranagar",
+      "lat": 12.978895955284758,
+      "lng": 77.6394880576751,
+      "description": "Basement flooding in residential apartment, water level rising",
+      "citizen": "Venkatesh Iyer",
+      "citizenPhone": "+91 87300 97580",
+      "department": "bbmp-storm",
+      "departmentName": "BBMP Storm Water",
+      "createdAt": "2026-07-24T17:37:53.859Z",
+      "updatedAt": "2026-07-24T17:37:53.859Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T17:37:53.859Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 95,
+      "eta": "4 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-042",
+      "type": "garbage",
+      "typeLabel": "Garbage Overflow",
+      "typeIcon": "🗑️",
+      "typeColor": "#10B981",
+      "priority": "medium",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 10,
+      "wardName": "Hebbal",
+      "lat": 13.031345389768632,
+      "lng": 77.6015299752266,
+      "description": "Dead animal on road not cleared, strong odor spreading",
+      "citizen": "Karthik Shetty",
+      "citizenPhone": "+91 73181 78416",
+      "department": "bbmp-sanitation",
+      "departmentName": "BBMP Sanitation",
+      "createdAt": "2026-07-24T17:36:53.843Z",
+      "updatedAt": "2026-07-24T17:36:53.843Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T17:36:53.843Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 90,
+      "eta": "4 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-041",
+      "type": "garbage",
+      "typeLabel": "Garbage Overflow",
+      "typeIcon": "🗑️",
+      "typeColor": "#10B981",
+      "priority": "medium",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 4,
+      "wardName": "Indiranagar",
+      "lat": 12.983127027018359,
+      "lng": 77.63949478894796,
+      "description": "Dead animal on road not cleared, strong odor spreading",
+      "citizen": "Reshma Begum",
+      "citizenPhone": "+91 83144 46299",
+      "department": "bbmp-sanitation",
+      "departmentName": "BBMP Sanitation",
+      "createdAt": "2026-07-24T17:35:53.842Z",
+      "updatedAt": "2026-07-24T17:35:53.842Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T17:35:53.842Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 97,
+      "eta": "2 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-040",
+      "type": "road-damage",
+      "typeLabel": "Road Damage",
+      "typeIcon": "🚧",
+      "typeColor": "#F97316",
+      "priority": "medium",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 3,
+      "wardName": "Koramangala",
+      "lat": 12.954345234867741,
+      "lng": 77.51624071846095,
+      "description": "Manhole cover missing on busy intersection",
+      "citizen": "Reshma Begum",
+      "citizenPhone": "+91 84179 82952",
+      "department": "bbmp-road",
+      "departmentName": "BBMP Road Maintenance",
+      "createdAt": "2026-07-24T17:34:53.837Z",
+      "updatedAt": "2026-07-24T17:34:53.837Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T17:34:53.837Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 93,
+      "eta": "2 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-039",
+      "type": "medical",
+      "typeLabel": "Medical Emergency",
+      "typeIcon": "🚑",
+      "typeColor": "#F43F5E",
+      "priority": "critical",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 4,
+      "wardName": "Indiranagar",
+      "lat": 12.979322166907636,
+      "lng": 77.63985331708469,
+      "description": "Road accident with injuries, two-wheeler collision with auto",
+      "citizen": "Arjun Reddy",
+      "citizenPhone": "+91 71480 60404",
+      "department": "medical",
+      "departmentName": "Medical Emergency",
+      "createdAt": "2026-07-24T17:33:53.851Z",
+      "updatedAt": "2026-07-24T17:33:53.851Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T17:33:53.851Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 96,
+      "eta": "3 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-038",
+      "type": "flooding",
+      "typeLabel": "Flooding",
+      "typeIcon": "🌊",
+      "typeColor": "#06B6D4",
+      "priority": "high",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 12,
+      "wardName": "HSR Layout",
+      "lat": 12.9089267847797,
+      "lng": 77.64974898709009,
+      "description": "Severe waterlogging on main road after heavy rainfall, vehicles stranded",
+      "citizen": "Suresh Gowda",
+      "citizenPhone": "+91 93733 49660",
+      "department": "bbmp-storm",
+      "departmentName": "BBMP Storm Water",
+      "createdAt": "2026-07-24T17:32:53.829Z",
+      "updatedAt": "2026-07-24T17:32:53.829Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T17:32:53.829Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 97,
+      "eta": "3 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-037",
+      "type": "streetlight",
+      "typeLabel": "Street Light Failure",
+      "typeIcon": "💡",
+      "typeColor": "#F59E0B",
+      "priority": "low",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 12,
+      "wardName": "HSR Layout",
+      "lat": 12.914852761577881,
+      "lng": 77.64393809670267,
+      "description": "Street light pole tilting dangerously after storm",
+      "citizen": "Venkatesh Iyer",
+      "citizenPhone": "+91 92623 91434",
+      "department": "bescom",
+      "departmentName": "BESCOM (Electricity)",
+      "createdAt": "2026-07-24T17:31:30.826Z",
+      "updatedAt": "2026-07-24T17:31:30.826Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T17:31:30.826Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 97,
+      "eta": "4 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-036",
+      "type": "water-supply",
+      "typeLabel": "Water Supply Issue",
+      "typeIcon": "💧",
+      "typeColor": "#3B82F6",
+      "priority": "high",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 11,
+      "wardName": "BTM Layout",
+      "lat": 12.914223990908134,
+      "lng": 77.6060357960109,
+      "description": "Water pipeline burst, water wasting on road for 6 hours",
+      "citizen": "Mohammed Ismail",
+      "citizenPhone": "+91 81574 18431",
+      "department": "bwssb",
+      "departmentName": "BWSSB (Water Supply)",
+      "createdAt": "2026-07-24T17:30:53.833Z",
+      "updatedAt": "2026-07-24T17:30:53.834Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T17:30:53.834Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 91,
+      "eta": "4 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-035",
+      "type": "road-damage",
+      "typeLabel": "Road Damage",
+      "typeIcon": "🚧",
+      "typeColor": "#F97316",
+      "priority": "medium",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 14,
+      "wardName": "Marathahalli",
+      "lat": 12.962058004169853,
+      "lng": 77.70497989176268,
+      "description": "Manhole cover missing on busy intersection",
+      "citizen": "Divya Hegde",
+      "citizenPhone": "+91 90687 70766",
+      "department": "bbmp-road",
+      "departmentName": "BBMP Road Maintenance",
+      "createdAt": "2026-07-24T17:30:16.825Z",
+      "updatedAt": "2026-07-24T17:30:16.825Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T17:30:16.825Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 92,
+      "eta": "3 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-034",
+      "type": "fire",
+      "typeLabel": "Fire",
+      "typeIcon": "🔥",
+      "typeColor": "#EF4444",
+      "priority": "critical",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 15,
+      "wardName": "JP Nagar",
+      "lat": 12.910310574573115,
+      "lng": 77.58939254846446,
+      "description": "Kitchen fire at restaurant, staff evacuated safely",
+      "citizen": "Akash Jain",
+      "citizenPhone": "+91 87924 95798",
+      "department": "fire-dept",
+      "departmentName": "Fire Department",
+      "createdAt": "2026-07-24T17:29:39.832Z",
+      "updatedAt": "2026-07-24T17:29:39.832Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T17:29:39.832Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 92,
+      "eta": "3 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-033",
+      "type": "fire",
+      "typeLabel": "Fire",
+      "typeIcon": "🔥",
+      "typeColor": "#EF4444",
+      "priority": "critical",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 8,
+      "wardName": "Basavanagudi",
+      "lat": 12.938365761744453,
+      "lng": 77.56908958095823,
+      "description": "Electrical fire in apartment complex, smoke visible from 3rd floor",
+      "citizen": "Pooja Nair",
+      "citizenPhone": "+91 96467 43188",
+      "department": "fire-dept",
+      "departmentName": "Fire Department",
+      "createdAt": "2026-07-24T17:29:02.884Z",
+      "updatedAt": "2026-07-24T17:29:02.884Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T17:29:02.884Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 94,
+      "eta": "3 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-032",
+      "type": "road-damage",
+      "typeLabel": "Road Damage",
+      "typeIcon": "🚧",
+      "typeColor": "#F97316",
+      "priority": "medium",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 3,
+      "wardName": "Koramangala",
+      "lat": 12.959196173022528,
+      "lng": 77.51458575908131,
+      "description": "Large pothole on main road causing accidents, multiple vehicles damaged",
+      "citizen": "Ganesh Acharya",
+      "citizenPhone": "+91 91542 55107",
+      "department": "bbmp-road",
+      "departmentName": "BBMP Road Maintenance",
+      "createdAt": "2026-07-24T17:28:53.845Z",
+      "updatedAt": "2026-07-24T17:28:53.845Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T17:28:53.845Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 94,
+      "eta": "2 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-031",
+      "type": "water-supply",
+      "typeLabel": "Water Supply Issue",
+      "typeIcon": "💧",
+      "typeColor": "#3B82F6",
+      "priority": "high",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 2,
+      "wardName": "Whitefield",
+      "lat": 12.965032940268852,
+      "lng": 77.74718268141176,
+      "description": "Water pipeline burst, water wasting on road for 6 hours",
+      "citizen": "Karthik Shetty",
+      "citizenPhone": "+91 85945 47741",
+      "department": "bwssb",
+      "departmentName": "BWSSB (Water Supply)",
+      "createdAt": "2026-07-24T17:28:24.836Z",
+      "updatedAt": "2026-07-24T17:28:24.836Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T17:28:24.836Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 90,
+      "eta": "3 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-030",
+      "type": "sewage",
+      "typeLabel": "Sewage Overflow",
+      "typeIcon": "🚰",
+      "typeColor": "#8B5CF6",
+      "priority": "high",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 11,
+      "wardName": "BTM Layout",
+      "lat": 12.91302406333129,
+      "lng": 77.60688495277623,
+      "description": "Open drain not covered, child fell in yesterday",
+      "citizen": "Arjun Reddy",
+      "citizenPhone": "+91 86063 21819",
+      "department": "bwssb",
+      "departmentName": "BWSSB (Water Supply)",
+      "createdAt": "2026-07-24T17:27:53.938Z",
+      "updatedAt": "2026-07-24T17:27:53.938Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T17:27:53.938Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 90,
+      "eta": "3 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-029",
+      "type": "streetlight",
+      "typeLabel": "Street Light Failure",
+      "typeIcon": "💡",
+      "typeColor": "#F59E0B",
+      "priority": "low",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 14,
+      "wardName": "Marathahalli",
+      "lat": 12.958167456485317,
+      "lng": 77.70473870909058,
+      "description": "Entire street dark for 3 days, multiple lights not working",
+      "citizen": "Arjun Reddy",
+      "citizenPhone": "+91 94903 45446",
+      "department": "bescom",
+      "departmentName": "BESCOM (Electricity)",
+      "createdAt": "2026-07-24T17:27:53.896Z",
+      "updatedAt": "2026-07-24T17:27:53.896Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T17:27:53.896Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 95,
+      "eta": "3 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-001",
+      "type": "fire",
+      "typeLabel": "Fire",
+      "typeIcon": "🔥",
+      "typeColor": "#EF4444",
+      "priority": "critical",
+      "status": "resolved",
+      "statusIndex": 5,
+      "ward": 1,
+      "wardName": "Mahadevapura",
+      "lat": 12.994269513646557,
+      "lng": 77.6992501010959,
+      "description": "Pothole on main road causing heavy traffic and safety hazard for two-wheelers.",
+      "citizen": "Citizen User 1",
+      "citizenPhone": "+91 98765 10000",
+      "department": "fire-dept",
+      "departmentName": "Fire Department",
+      "createdAt": "2026-07-24T16:59:38.019Z",
+      "updatedAt": "2026-07-24T16:59:38.019Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T16:59:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "AI Classified",
+          "time": "2026-07-24T17:23:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": "2026-07-24T17:56:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": "2026-07-24T18:09:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": "2026-07-24T18:38:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": "2026-07-24T19:04:38.019Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 97,
+      "eta": null,
+      "feedback": 4,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-002",
+      "type": "flooding",
+      "typeLabel": "Flooding",
+      "typeIcon": "🌊",
+      "typeColor": "#06B6D4",
+      "priority": "high",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 2,
+      "wardName": "Whitefield",
+      "lat": 12.96706646536893,
+      "lng": 77.74707872505239,
+      "description": "Street light completely non-functional for past 3 days.",
+      "citizen": "Citizen User 2",
+      "citizenPhone": "+91 98765 10001",
+      "department": "bbmp-storm",
+      "departmentName": "BBMP Storm Water",
+      "createdAt": "2026-07-24T16:25:38.019Z",
+      "updatedAt": "2026-07-24T16:25:38.019Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T16:25:38.019Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 91,
+      "eta": "1 hours",
+      "feedback": null,
+      "citizenSubmitted": false
+    },
+    {
+      "id": "INC-2026-003",
+      "type": "road-damage",
+      "typeLabel": "Road Damage",
+      "typeIcon": "🚧",
+      "typeColor": "#F97316",
+      "priority": "medium",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 3,
+      "wardName": "Koramangala",
+      "lat": 12.935537914336047,
+      "lng": 77.62448304204665,
+      "description": "Garbage accumulation near community park creating unhygienic conditions.",
+      "citizen": "Citizen User 3",
+      "citizenPhone": "+91 98765 10002",
+      "department": "bbmp-road",
+      "departmentName": "BBMP Road Maintenance",
+      "createdAt": "2026-07-24T15:31:38.019Z",
+      "updatedAt": "2026-07-24T15:31:38.019Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T15:31:38.019Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 94,
+      "eta": "1 hours",
+      "feedback": null,
+      "citizenSubmitted": false
+    },
+    {
+      "id": "INC-2026-004",
+      "type": "medical",
+      "typeLabel": "Medical Emergency",
+      "typeIcon": "🚑",
+      "typeColor": "#F43F5E",
+      "priority": "critical",
+      "status": "dispatched",
+      "statusIndex": 4,
+      "ward": 4,
+      "wardName": "Indiranagar",
+      "lat": 12.97627313283508,
+      "lng": 77.64118297328584,
+      "description": "Water pipe leakage overflowing onto public footpath.",
+      "citizen": "Citizen User 4",
+      "citizenPhone": "+91 98765 10003",
+      "department": "medical",
+      "departmentName": "Medical Emergency",
+      "createdAt": "2026-07-24T14:50:38.019Z",
+      "updatedAt": "2026-07-24T14:50:38.019Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T14:50:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "AI Classified",
+          "time": "2026-07-24T15:13:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": "2026-07-24T15:32:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": "2026-07-24T16:05:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": "2026-07-24T16:26:38.019Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 92,
+      "eta": "2 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-005",
+      "type": "streetlight",
+      "typeLabel": "Street Light Failure",
+      "typeIcon": "💡",
+      "typeColor": "#F59E0B",
+      "priority": "low",
+      "status": "dispatched",
+      "statusIndex": 3,
+      "ward": 5,
+      "wardName": "Jayanagar",
+      "lat": 12.932041276424028,
+      "lng": 77.58601444196417,
+      "description": "Traffic signal failure at major intersection causing congestion.",
+      "citizen": "Citizen User 5",
+      "citizenPhone": "+91 98765 10004",
+      "department": "bescom",
+      "departmentName": "BESCOM (Electricity)",
+      "createdAt": "2026-07-24T14:23:38.019Z",
+      "updatedAt": "2026-07-24T14:23:38.019Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T14:23:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "AI Classified",
+          "time": "2026-07-24T14:34:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": "2026-07-24T14:55:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": "2026-07-24T15:19:38.019Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 92,
+      "eta": "3 hours",
+      "feedback": null,
+      "citizenSubmitted": false
+    },
+    {
+      "id": "INC-2026-006",
+      "type": "garbage",
+      "typeLabel": "Garbage Overflow",
+      "typeIcon": "🗑️",
+      "typeColor": "#10B981",
+      "priority": "medium",
+      "status": "assigned",
+      "statusIndex": 1,
+      "ward": 6,
+      "wardName": "Rajajinagar",
+      "lat": 12.989017667225708,
+      "lng": 77.55701910750986,
+      "description": "Heavy rain waterlogging underpass, vehicles stranded.",
+      "citizen": "Citizen User 6",
+      "citizenPhone": "+91 98765 10005",
+      "department": "bbmp-sanitation",
+      "departmentName": "BBMP Sanitation",
+      "createdAt": "2026-07-24T13:37:38.019Z",
+      "updatedAt": "2026-07-24T13:37:38.019Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T13:37:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "AI Classified",
+          "time": "2026-07-24T14:08:38.019Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 94,
+      "eta": "3 hours",
+      "feedback": null,
+      "citizenSubmitted": false
+    },
+    {
+      "id": "INC-2026-007",
+      "type": "water-supply",
+      "typeLabel": "Water Supply Issue",
+      "typeIcon": "💧",
+      "typeColor": "#3B82F6",
+      "priority": "high",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 7,
+      "wardName": "Malleshwaram",
+      "lat": 12.993668722370959,
+      "lng": 77.57296466555432,
+      "description": "Pothole on main road causing heavy traffic and safety hazard for two-wheelers.",
+      "citizen": "Citizen User 7",
+      "citizenPhone": "+91 98765 10006",
+      "department": "bwssb",
+      "departmentName": "BWSSB (Water Supply)",
+      "createdAt": "2026-07-24T12:31:38.019Z",
+      "updatedAt": "2026-07-24T12:31:38.019Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T12:31:38.019Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 90,
+      "eta": "1 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-008",
+      "type": "sewage",
+      "typeLabel": "Sewage Overflow",
+      "typeIcon": "🚰",
+      "typeColor": "#8B5CF6",
+      "priority": "high",
+      "status": "resolved",
+      "statusIndex": 5,
+      "ward": 8,
+      "wardName": "Basavanagudi",
+      "lat": 12.94363959366141,
+      "lng": 77.57149381301994,
+      "description": "Street light completely non-functional for past 3 days.",
+      "citizen": "Citizen User 8",
+      "citizenPhone": "+91 98765 10007",
+      "department": "bwssb",
+      "departmentName": "BWSSB (Water Supply)",
+      "createdAt": "2026-07-24T11:55:38.019Z",
+      "updatedAt": "2026-07-24T11:55:38.019Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T11:55:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "AI Classified",
+          "time": "2026-07-24T12:14:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": "2026-07-24T12:34:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": "2026-07-24T13:05:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": "2026-07-24T13:28:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": "2026-07-24T14:00:38.019Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 99,
+      "eta": null,
+      "feedback": 4,
+      "citizenSubmitted": false
+    },
+    {
+      "id": "INC-2026-009",
+      "type": "traffic",
+      "typeLabel": "Traffic Signal Issue",
+      "typeIcon": "🚦",
+      "typeColor": "#F59E0B",
+      "priority": "medium",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 9,
+      "wardName": "Yelahanka",
+      "lat": 13.101383633747783,
+      "lng": 77.59687902582023,
+      "description": "Garbage accumulation near community park creating unhygienic conditions.",
+      "citizen": "Citizen User 9",
+      "citizenPhone": "+91 98765 10008",
+      "department": "traffic-police",
+      "departmentName": "Traffic Police",
+      "createdAt": "2026-07-24T11:05:38.019Z",
+      "updatedAt": "2026-07-24T11:05:38.019Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T11:05:38.019Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 98,
+      "eta": "2 hours",
+      "feedback": null,
+      "citizenSubmitted": false
+    },
+    {
+      "id": "INC-2026-010",
+      "type": "fire",
+      "typeLabel": "Fire",
+      "typeIcon": "🔥",
+      "typeColor": "#EF4444",
+      "priority": "critical",
+      "status": "dispatched",
+      "statusIndex": 4,
+      "ward": 10,
+      "wardName": "Hebbal",
+      "lat": 13.033966111008171,
+      "lng": 77.59530920250134,
+      "description": "Water pipe leakage overflowing onto public footpath.",
+      "citizen": "Citizen User 10",
+      "citizenPhone": "+91 98765 10009",
+      "department": "fire-dept",
+      "departmentName": "Fire Department",
+      "createdAt": "2026-07-24T10:19:38.019Z",
+      "updatedAt": "2026-07-24T10:19:38.019Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T10:19:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "AI Classified",
+          "time": "2026-07-24T10:52:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": "2026-07-24T11:21:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": "2026-07-24T11:49:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": "2026-07-24T11:55:38.019Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 90,
+      "eta": "3 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-011",
+      "type": "flooding",
+      "typeLabel": "Flooding",
+      "typeIcon": "🌊",
+      "typeColor": "#06B6D4",
+      "priority": "high",
+      "status": "dispatched",
+      "statusIndex": 3,
+      "ward": 11,
+      "wardName": "BTM Layout",
+      "lat": 12.91731160520939,
+      "lng": 77.6106046102015,
+      "description": "Traffic signal failure at major intersection causing congestion.",
+      "citizen": "Citizen User 11",
+      "citizenPhone": "+91 98765 10010",
+      "department": "bbmp-storm",
+      "departmentName": "BBMP Storm Water",
+      "createdAt": "2026-07-24T09:51:38.019Z",
+      "updatedAt": "2026-07-24T09:51:38.019Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T09:51:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "AI Classified",
+          "time": "2026-07-24T10:00:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": "2026-07-24T10:31:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": "2026-07-24T11:01:38.019Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 90,
+      "eta": "2 hours",
+      "feedback": null,
+      "citizenSubmitted": false
+    },
+    {
+      "id": "INC-2026-012",
+      "type": "road-damage",
+      "typeLabel": "Road Damage",
+      "typeIcon": "🚧",
+      "typeColor": "#F97316",
+      "priority": "medium",
+      "status": "resolved",
+      "statusIndex": 5,
+      "ward": 12,
+      "wardName": "HSR Layout",
+      "lat": 12.909058886900253,
+      "lng": 77.64556737295108,
+      "description": "Heavy rain waterlogging underpass, vehicles stranded.",
+      "citizen": "Citizen User 12",
+      "citizenPhone": "+91 98765 10011",
+      "department": "bbmp-road",
+      "departmentName": "BBMP Road Maintenance",
+      "createdAt": "2026-07-24T08:56:38.019Z",
+      "updatedAt": "2026-07-24T08:56:38.019Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T08:56:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "AI Classified",
+          "time": "2026-07-24T09:23:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": "2026-07-24T09:37:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": "2026-07-24T09:48:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": "2026-07-24T10:13:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": "2026-07-24T10:43:38.019Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 94,
+      "eta": null,
+      "feedback": 5,
+      "citizenSubmitted": false
+    },
+    {
+      "id": "INC-2026-013",
+      "type": "medical",
+      "typeLabel": "Medical Emergency",
+      "typeIcon": "🚑",
+      "typeColor": "#F43F5E",
+      "priority": "critical",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 13,
+      "wardName": "Electronic City",
+      "lat": 12.839187077356117,
+      "lng": 77.6760582747806,
+      "description": "Pothole on main road causing heavy traffic and safety hazard for two-wheelers.",
+      "citizen": "Citizen User 13",
+      "citizenPhone": "+91 98765 10012",
+      "department": "medical",
+      "departmentName": "Medical Emergency",
+      "createdAt": "2026-07-24T08:12:38.019Z",
+      "updatedAt": "2026-07-24T08:12:38.019Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T08:12:38.019Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 98,
+      "eta": "4 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-014",
+      "type": "streetlight",
+      "typeLabel": "Street Light Failure",
+      "typeIcon": "💡",
+      "typeColor": "#F59E0B",
+      "priority": "low",
+      "status": "assigned",
+      "statusIndex": 1,
+      "ward": 14,
+      "wardName": "Marathahalli",
+      "lat": 12.960736103132795,
+      "lng": 77.69908133739875,
+      "description": "Street light completely non-functional for past 3 days.",
+      "citizen": "Citizen User 14",
+      "citizenPhone": "+91 98765 10013",
+      "department": "bescom",
+      "departmentName": "BESCOM (Electricity)",
+      "createdAt": "2026-07-24T07:26:38.019Z",
+      "updatedAt": "2026-07-24T07:26:38.019Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T07:26:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "AI Classified",
+          "time": "2026-07-24T08:00:38.019Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 94,
+      "eta": "2 hours",
+      "feedback": null,
+      "citizenSubmitted": false
+    },
+    {
+      "id": "INC-2026-015",
+      "type": "garbage",
+      "typeLabel": "Garbage Overflow",
+      "typeIcon": "🗑️",
+      "typeColor": "#10B981",
+      "priority": "medium",
+      "status": "dispatched",
+      "statusIndex": 3,
+      "ward": 15,
+      "wardName": "JP Nagar",
+      "lat": 12.906011328176971,
+      "lng": 77.58353031622482,
+      "description": "Garbage accumulation near community park creating unhygienic conditions.",
+      "citizen": "Citizen User 15",
+      "citizenPhone": "+91 98765 10014",
+      "department": "bbmp-sanitation",
+      "departmentName": "BBMP Sanitation",
+      "createdAt": "2026-07-24T06:45:38.019Z",
+      "updatedAt": "2026-07-24T06:45:38.019Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T06:45:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "AI Classified",
+          "time": "2026-07-24T06:56:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": "2026-07-24T07:11:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": "2026-07-24T07:37:38.019Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 91,
+      "eta": "1 hours",
+      "feedback": null,
+      "citizenSubmitted": false
+    },
+    {
+      "id": "INC-2026-016",
+      "type": "water-supply",
+      "typeLabel": "Water Supply Issue",
+      "typeIcon": "💧",
+      "typeColor": "#3B82F6",
+      "priority": "high",
+      "status": "assigned",
+      "statusIndex": 1,
+      "ward": 1,
+      "wardName": "Mahadevapura",
+      "lat": 12.99498143206932,
+      "lng": 77.69886094724545,
+      "description": "Water pipe leakage overflowing onto public footpath.",
+      "citizen": "Citizen User 16",
+      "citizenPhone": "+91 98765 10015",
+      "department": "bwssb",
+      "departmentName": "BWSSB (Water Supply)",
+      "createdAt": "2026-07-24T05:58:38.019Z",
+      "updatedAt": "2026-07-24T05:58:38.019Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T05:58:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "AI Classified",
+          "time": "2026-07-24T06:03:38.019Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 95,
+      "eta": "3 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-017",
+      "type": "sewage",
+      "typeLabel": "Sewage Overflow",
+      "typeIcon": "🚰",
+      "typeColor": "#8B5CF6",
+      "priority": "high",
+      "status": "assigned",
+      "statusIndex": 1,
+      "ward": 2,
+      "wardName": "Whitefield",
+      "lat": 12.966822734777185,
+      "lng": 77.75281177630934,
+      "description": "Traffic signal failure at major intersection causing congestion.",
+      "citizen": "Citizen User 17",
+      "citizenPhone": "+91 98765 10016",
+      "department": "bwssb",
+      "departmentName": "BWSSB (Water Supply)",
+      "createdAt": "2026-07-24T05:05:38.019Z",
+      "updatedAt": "2026-07-24T05:05:38.019Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T05:05:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "AI Classified",
+          "time": "2026-07-24T05:12:38.019Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 92,
+      "eta": "2 hours",
+      "feedback": null,
+      "citizenSubmitted": false
+    },
+    {
+      "id": "INC-2026-018",
+      "type": "traffic",
+      "typeLabel": "Traffic Signal Issue",
+      "typeIcon": "🚦",
+      "typeColor": "#F59E0B",
+      "priority": "medium",
+      "status": "dispatched",
+      "statusIndex": 3,
+      "ward": 3,
+      "wardName": "Koramangala",
+      "lat": 12.935793432047467,
+      "lng": 77.6237490522327,
+      "description": "Heavy rain waterlogging underpass, vehicles stranded.",
+      "citizen": "Citizen User 18",
+      "citizenPhone": "+91 98765 10017",
+      "department": "traffic-police",
+      "departmentName": "Traffic Police",
+      "createdAt": "2026-07-24T04:38:38.019Z",
+      "updatedAt": "2026-07-24T04:38:38.019Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T04:38:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "AI Classified",
+          "time": "2026-07-24T05:00:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": "2026-07-24T05:10:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": "2026-07-24T05:29:38.019Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 97,
+      "eta": "4 hours",
+      "feedback": null,
+      "citizenSubmitted": false
+    },
+    {
+      "id": "INC-2026-019",
+      "type": "fire",
+      "typeLabel": "Fire",
+      "typeIcon": "🔥",
+      "typeColor": "#EF4444",
+      "priority": "critical",
+      "status": "resolved",
+      "statusIndex": 5,
+      "ward": 4,
+      "wardName": "Indiranagar",
+      "lat": 12.976966655697339,
+      "lng": 77.63838371704288,
+      "description": "Pothole on main road causing heavy traffic and safety hazard for two-wheelers.",
+      "citizen": "Citizen User 19",
+      "citizenPhone": "+91 98765 10018",
+      "department": "fire-dept",
+      "departmentName": "Fire Department",
+      "createdAt": "2026-07-24T03:34:38.019Z",
+      "updatedAt": "2026-07-24T03:34:38.019Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T03:34:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "AI Classified",
+          "time": "2026-07-24T03:49:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": "2026-07-24T04:10:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": "2026-07-24T04:28:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": "2026-07-24T04:56:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": "2026-07-24T05:05:38.019Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 90,
+      "eta": null,
+      "feedback": 4,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-020",
+      "type": "flooding",
+      "typeLabel": "Flooding",
+      "typeIcon": "🌊",
+      "typeColor": "#06B6D4",
+      "priority": "high",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 5,
+      "wardName": "Jayanagar",
+      "lat": 12.929639124147416,
+      "lng": 77.5840090180925,
+      "description": "Street light completely non-functional for past 3 days.",
+      "citizen": "Citizen User 20",
+      "citizenPhone": "+91 98765 10019",
+      "department": "bbmp-storm",
+      "departmentName": "BBMP Storm Water",
+      "createdAt": "2026-07-24T02:50:38.019Z",
+      "updatedAt": "2026-07-24T02:50:38.019Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T02:50:38.019Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 93,
+      "eta": "4 hours",
+      "feedback": null,
+      "citizenSubmitted": false
+    },
+    {
+      "id": "INC-2026-021",
+      "type": "road-damage",
+      "typeLabel": "Road Damage",
+      "typeIcon": "🚧",
+      "typeColor": "#F97316",
+      "priority": "medium",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 6,
+      "wardName": "Rajajinagar",
+      "lat": 12.991030148865267,
+      "lng": 77.5551286599747,
+      "description": "Garbage accumulation near community park creating unhygienic conditions.",
+      "citizen": "Citizen User 21",
+      "citizenPhone": "+91 98765 10020",
+      "department": "bbmp-road",
+      "departmentName": "BBMP Road Maintenance",
+      "createdAt": "2026-07-24T02:25:38.019Z",
+      "updatedAt": "2026-07-24T02:25:38.019Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T02:25:38.019Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 96,
+      "eta": "4 hours",
+      "feedback": null,
+      "citizenSubmitted": false
+    },
+    {
+      "id": "INC-2026-022",
+      "type": "medical",
+      "typeLabel": "Medical Emergency",
+      "typeIcon": "🚑",
+      "typeColor": "#F43F5E",
+      "priority": "critical",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 7,
+      "wardName": "Malleshwaram",
+      "lat": 12.996892965937572,
+      "lng": 77.57153534965593,
+      "description": "Water pipe leakage overflowing onto public footpath.",
+      "citizen": "Citizen User 22",
+      "citizenPhone": "+91 98765 10021",
+      "department": "medical",
+      "departmentName": "Medical Emergency",
+      "createdAt": "2026-07-24T01:22:38.019Z",
+      "updatedAt": "2026-07-24T01:22:38.019Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T01:22:38.019Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 91,
+      "eta": "1 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-023",
+      "type": "streetlight",
+      "typeLabel": "Street Light Failure",
+      "typeIcon": "💡",
+      "typeColor": "#F59E0B",
+      "priority": "low",
+      "status": "assigned",
+      "statusIndex": 1,
+      "ward": 8,
+      "wardName": "Basavanagudi",
+      "lat": 12.944108853044611,
+      "lng": 77.57173213047658,
+      "description": "Traffic signal failure at major intersection causing congestion.",
+      "citizen": "Citizen User 23",
+      "citizenPhone": "+91 98765 10022",
+      "department": "bescom",
+      "departmentName": "BESCOM (Electricity)",
+      "createdAt": "2026-07-24T00:57:38.019Z",
+      "updatedAt": "2026-07-24T00:57:38.019Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T00:57:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "AI Classified",
+          "time": "2026-07-24T01:07:38.019Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 95,
+      "eta": "4 hours",
+      "feedback": null,
+      "citizenSubmitted": false
+    },
+    {
+      "id": "INC-2026-024",
+      "type": "garbage",
+      "typeLabel": "Garbage Overflow",
+      "typeIcon": "🗑️",
+      "typeColor": "#10B981",
+      "priority": "medium",
+      "status": "dispatched",
+      "statusIndex": 3,
+      "ward": 9,
+      "wardName": "Yelahanka",
+      "lat": 13.098483592617962,
+      "lng": 77.59842516117388,
+      "description": "Heavy rain waterlogging underpass, vehicles stranded.",
+      "citizen": "Citizen User 24",
+      "citizenPhone": "+91 98765 10023",
+      "department": "bbmp-sanitation",
+      "departmentName": "BBMP Sanitation",
+      "createdAt": "2026-07-24T00:03:38.019Z",
+      "updatedAt": "2026-07-24T00:03:38.019Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-24T00:03:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "AI Classified",
+          "time": "2026-07-24T00:36:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": "2026-07-24T00:52:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": "2026-07-24T01:25:38.019Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 92,
+      "eta": "2 hours",
+      "feedback": null,
+      "citizenSubmitted": false
+    },
+    {
+      "id": "INC-2026-025",
+      "type": "water-supply",
+      "typeLabel": "Water Supply Issue",
+      "typeIcon": "💧",
+      "typeColor": "#3B82F6",
+      "priority": "high",
+      "status": "resolved",
+      "statusIndex": 5,
+      "ward": 10,
+      "wardName": "Hebbal",
+      "lat": 13.034484229198718,
+      "lng": 77.59711847874044,
+      "description": "Pothole on main road causing heavy traffic and safety hazard for two-wheelers.",
+      "citizen": "Citizen User 25",
+      "citizenPhone": "+91 98765 10024",
+      "department": "bwssb",
+      "departmentName": "BWSSB (Water Supply)",
+      "createdAt": "2026-07-23T23:11:38.019Z",
+      "updatedAt": "2026-07-23T23:11:38.019Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-23T23:11:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "AI Classified",
+          "time": "2026-07-23T23:44:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": "2026-07-24T00:05:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": "2026-07-24T00:19:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": "2026-07-24T00:45:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": "2026-07-24T01:06:38.019Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 95,
+      "eta": null,
+      "feedback": 4,
+      "citizenSubmitted": true
+    },
+    {
+      "id": "INC-2026-026",
+      "type": "sewage",
+      "typeLabel": "Sewage Overflow",
+      "typeIcon": "🚰",
+      "typeColor": "#8B5CF6",
+      "priority": "high",
+      "status": "dispatched",
+      "statusIndex": 3,
+      "ward": 11,
+      "wardName": "BTM Layout",
+      "lat": 12.91857685746354,
+      "lng": 77.61299955259054,
+      "description": "Street light completely non-functional for past 3 days.",
+      "citizen": "Citizen User 26",
+      "citizenPhone": "+91 98765 10025",
+      "department": "bwssb",
+      "departmentName": "BWSSB (Water Supply)",
+      "createdAt": "2026-07-23T22:28:38.019Z",
+      "updatedAt": "2026-07-23T22:28:38.019Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-23T22:28:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "AI Classified",
+          "time": "2026-07-23T22:54:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": "2026-07-23T23:08:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": "2026-07-23T23:40:38.019Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 94,
+      "eta": "2 hours",
+      "feedback": null,
+      "citizenSubmitted": false
+    },
+    {
+      "id": "INC-2026-027",
+      "type": "traffic",
+      "typeLabel": "Traffic Signal Issue",
+      "typeIcon": "🚦",
+      "typeColor": "#F59E0B",
+      "priority": "medium",
+      "status": "reported",
+      "statusIndex": 0,
+      "ward": 12,
+      "wardName": "HSR Layout",
+      "lat": 12.909026220456825,
+      "lng": 77.64862587242288,
+      "description": "Garbage accumulation near community park creating unhygienic conditions.",
+      "citizen": "Citizen User 27",
+      "citizenPhone": "+91 98765 10026",
+      "department": "traffic-police",
+      "departmentName": "Traffic Police",
+      "createdAt": "2026-07-23T21:43:38.019Z",
+      "updatedAt": "2026-07-23T21:43:38.019Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-23T21:43:38.019Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "AI Classified",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 96,
+      "eta": "2 hours",
+      "feedback": null,
+      "citizenSubmitted": false
+    },
+    {
+      "id": "INC-2026-028",
+      "type": "fire",
+      "typeLabel": "Fire",
+      "typeIcon": "🔥",
+      "typeColor": "#EF4444",
+      "priority": "critical",
+      "status": "dispatched",
+      "statusIndex": 3,
+      "ward": 13,
+      "wardName": "Electronic City",
+      "lat": 12.842703764233882,
+      "lng": 77.67540253862192,
+      "description": "Water pipe leakage overflowing onto public footpath.",
+      "citizen": "Citizen User 28",
+      "citizenPhone": "+91 98765 10027",
+      "department": "fire-dept",
+      "departmentName": "Fire Department",
+      "createdAt": "2026-07-23T20:48:38.019Z",
+      "updatedAt": "2026-07-23T20:48:38.019Z",
+      "timeline": [
+        {
+          "step": "Citizen Reported",
+          "time": "2026-07-23T20:48:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "AI Classified",
+          "time": "2026-07-23T21:16:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Department Assigned",
+          "time": "2026-07-23T21:50:38.019Z",
+          "completed": true,
+          "active": false
+        },
+        {
+          "step": "Team Dispatched",
+          "time": "2026-07-23T21:56:38.019Z",
+          "completed": false,
+          "active": true
+        },
+        {
+          "step": "Work Started",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Resolved",
+          "time": null,
+          "completed": false,
+          "active": false
+        },
+        {
+          "step": "Citizen Feedback",
+          "time": null,
+          "completed": false,
+          "active": false
+        }
+      ],
+      "aiConfidence": 91,
+      "eta": "3 hours",
+      "feedback": null,
+      "citizenSubmitted": true
+    }
+  ],
+  "wards": [
+    {
+      "id": 1,
+      "name": "Mahadevapura",
+      "lat": 12.9956,
+      "lng": 77.697
+    },
+    {
+      "id": 2,
+      "name": "Whitefield",
+      "lat": 12.9698,
+      "lng": 77.75
+    },
+    {
+      "id": 3,
+      "name": "Koramangala",
+      "lat": 12.9352,
+      "lng": 77.6245
+    },
+    {
+      "id": 4,
+      "name": "Indiranagar",
+      "lat": 12.9784,
+      "lng": 77.6408
+    },
+    {
+      "id": 5,
+      "name": "Jayanagar",
+      "lat": 12.9308,
+      "lng": 77.5838
+    },
+    {
+      "id": 6,
+      "name": "Rajajinagar",
+      "lat": 12.9883,
+      "lng": 77.5563
+    },
+    {
+      "id": 7,
+      "name": "Malleshwaram",
+      "lat": 12.9965,
+      "lng": 77.5713
+    },
+    {
+      "id": 8,
+      "name": "Basavanagudi",
+      "lat": 12.9422,
+      "lng": 77.5737
+    },
+    {
+      "id": 9,
+      "name": "Yelahanka",
+      "lat": 13.1007,
+      "lng": 77.5963
+    },
+    {
+      "id": 10,
+      "name": "Hebbal",
+      "lat": 13.0358,
+      "lng": 77.597
+    },
+    {
+      "id": 11,
+      "name": "BTM Layout",
+      "lat": 12.9166,
+      "lng": 77.6101
+    },
+    {
+      "id": 12,
+      "name": "HSR Layout",
+      "lat": 12.9116,
+      "lng": 77.6474
+    },
+    {
+      "id": 13,
+      "name": "Electronic City",
+      "lat": 12.8399,
+      "lng": 77.677
+    },
+    {
+      "id": 14,
+      "name": "Marathahalli",
+      "lat": 12.9591,
+      "lng": 77.7018
+    },
+    {
+      "id": 15,
+      "name": "JP Nagar",
+      "lat": 12.9063,
+      "lng": 77.5857
+    }
+  ],
+  "departments": [
+    {
+      "id": "bbmp-road",
+      "name": "BBMP Road Maintenance",
+      "icon": "🚧",
+      "color": "#F97316"
+    },
+    {
+      "id": "bbmp-sanitation",
+      "name": "BBMP Sanitation",
+      "icon": "🗑️",
+      "color": "#10B981"
+    },
+    {
+      "id": "fire-dept",
+      "name": "Fire Department",
+      "icon": "🚒",
+      "color": "#EF4444"
+    },
+    {
+      "id": "bwssb",
+      "name": "BWSSB (Water Supply)",
+      "icon": "💧",
+      "color": "#3B82F6"
+    },
+    {
+      "id": "bescom",
+      "name": "BESCOM (Electricity)",
+      "icon": "⚡",
+      "color": "#F59E0B"
+    },
+    {
+      "id": "traffic-police",
+      "name": "Traffic Police",
+      "icon": "🚔",
+      "color": "#8B5CF6"
+    },
+    {
+      "id": "medical",
+      "name": "Medical Emergency",
+      "icon": "🚑",
+      "color": "#F43F5E"
+    },
+    {
+      "id": "bbmp-storm",
+      "name": "BBMP Storm Water",
+      "icon": "🌊",
+      "color": "#06B6D4"
+    }
+  ],
+  "incidentTypes": [
+    {
+      "id": "fire",
+      "label": "Fire",
+      "icon": "🔥",
+      "color": "#EF4444",
+      "dept": "fire-dept",
+      "priority": "critical"
+    },
+    {
+      "id": "flooding",
+      "label": "Flooding",
+      "icon": "🌊",
+      "color": "#06B6D4",
+      "dept": "bbmp-storm",
+      "priority": "high"
+    },
+    {
+      "id": "road-damage",
+      "label": "Road Damage",
+      "icon": "🚧",
+      "color": "#F97316",
+      "dept": "bbmp-road",
+      "priority": "medium"
+    },
+    {
+      "id": "medical",
+      "label": "Medical Emergency",
+      "icon": "🚑",
+      "color": "#F43F5E",
+      "dept": "medical",
+      "priority": "critical"
+    },
+    {
+      "id": "streetlight",
+      "label": "Street Light Failure",
+      "icon": "💡",
+      "color": "#F59E0B",
+      "dept": "bescom",
+      "priority": "low"
+    },
+    {
+      "id": "garbage",
+      "label": "Garbage Overflow",
+      "icon": "🗑️",
+      "color": "#10B981",
+      "dept": "bbmp-sanitation",
+      "priority": "medium"
+    },
+    {
+      "id": "water-supply",
+      "label": "Water Supply Issue",
+      "icon": "💧",
+      "color": "#3B82F6",
+      "dept": "bwssb",
+      "priority": "high"
+    },
+    {
+      "id": "sewage",
+      "label": "Sewage Overflow",
+      "icon": "🚰",
+      "color": "#8B5CF6",
+      "dept": "bwssb",
+      "priority": "high"
+    },
+    {
+      "id": "traffic",
+      "label": "Traffic Signal Issue",
+      "icon": "🚦",
+      "color": "#F59E0B",
+      "dept": "traffic-police",
+      "priority": "medium"
+    }
+  ],
+  "broadcasts": [],
+  "autonomousMode": true
+}

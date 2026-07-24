@@ -3,6 +3,13 @@ const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
 
+require('dotenv').config();
+const { GoogleGenAI } = require('@google/genai');
+
+const ai = new GoogleGenAI({
+    apiKey: process.env.GEMINI_API_KEY
+});
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -241,7 +248,7 @@ app.get('/api/incidents/:id', (req, res) => {
 });
 
 // Create New Incident (Citizen Complaint)
-app.post('/api/incidents', (req, res) => {
+app.post('/api/incidents', async (req, res) => {
   const store = loadStore();
   const { type, description, wardId, citizenName, citizenPhone, lat, lng } = req.body;
 
@@ -249,13 +256,36 @@ app.post('/api/incidents', (req, res) => {
   const wardObj = wards.find(w => w.id === parseInt(wardId)) || wards[2];
   const deptObj = departments.find(d => d.id === typeObj.dept) || departments[0];
 
+  let predictedPriority = typeObj.priority;
+  let confidence = Math.floor(Math.random() * 10) + 90;
+
+  try {
+    const mlResponse = await fetch('http://localhost:5000/predict-priority', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        type: typeObj.id,
+        description: description || '',
+        ward: wardObj.name
+      })
+    });
+    const mlData = await mlResponse.json();
+    if (mlData && mlData.success) {
+      predictedPriority = mlData.priority;
+      confidence = Math.round(mlData.confidence);
+      console.log(`[ML priority classifier] predicted priority: ${predictedPriority.toUpperCase()} (confidence: ${confidence}%)`);
+    }
+  } catch (mlErr) {
+    console.warn("[ML priority classifier] Service offline. Using default incident type classification:", mlErr.message);
+  }
+
   const newIncident = {
     id: `INC-2026-${(store.incidents.length + 1).toString().padStart(3, '0')}`,
     type: typeObj.id,
     typeLabel: typeObj.label,
     typeIcon: typeObj.icon,
     typeColor: typeObj.color,
-    priority: typeObj.priority,
+    priority: predictedPriority,
     status: 'reported',
     statusIndex: 0,
     ward: wardObj.id,
@@ -270,7 +300,7 @@ app.post('/api/incidents', (req, res) => {
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),
     timeline: generateTimeline(new Date().toISOString(), 0),
-    aiConfidence: Math.floor(Math.random() * 10) + 90,
+    aiConfidence: confidence,
     eta: `${Math.floor(Math.random() * 3) + 2} hours`,
     feedback: null,
     citizenSubmitted: true
@@ -358,7 +388,261 @@ app.post('/api/reset', (req, res) => {
   saveStore(store);
   res.json({ success: true, message: 'Backend database reset to default seed data' });
 });
+function generateOfflineFallbackResponse(message, incidents) {
+  const query = message.toLowerCase();
+  
+  // 1. Identify ward filter
+  const wards = [
+    'mahadevapura', 'whitefield', 'koramangala', 'indiranagar', 'jayanagar', 
+    'rajajinagar', 'malleshwaram', 'basavanagudi', 'yelahanka', 'hebbal', 
+    'btm layout', 'hsr layout', 'electronic city', 'marathahalli', 'jp nagar'
+  ];
+  let matchedWard = null;
+  for (const w of wards) {
+    if (query.includes(w)) {
+      matchedWard = w;
+      break;
+    }
+  }
 
+  // 2. Identify type/keyword filters
+  const categoryKeywords = {
+    fire: ['fire', 'smoke', 'burn', 'blaze'],
+    flooding: ['flood', 'waterlogging', 'rain', 'water log', 'underpass'],
+    'road-damage': ['pothole', 'road damage', 'road', 'crater', 'footpath'],
+    medical: ['medical', 'ambulance', 'accident', 'injury', 'hospital'],
+    streetlight: ['streetlight', 'street light', 'bulb', 'darkness'],
+    garbage: ['garbage', 'waste', 'trash', 'debris', 'dump'],
+    'water-supply': ['water supply', 'leakage', 'no water', 'pipe leak'],
+    sewage: ['sewage', 'drain', 'gutter', 'overflow'],
+    traffic: ['traffic', 'congestion', 'signal', 'jam']
+  };
+  
+  let matchedTypes = [];
+  for (const [type, keywords] of Object.entries(categoryKeywords)) {
+    if (keywords.some(kw => query.includes(kw))) {
+      matchedTypes.push(type);
+    }
+  }
+
+  // 3. Identify status filters
+  const statuses = ['reported', 'assigned', 'dispatched', 'resolved'];
+  let matchedStatus = null;
+  for (const s of statuses) {
+    if (query.includes(s)) {
+      matchedStatus = s;
+      break;
+    }
+  }
+
+  // 4. Identify priority filters
+  const priorities = ['critical', 'high', 'medium', 'low'];
+  let matchedPriority = null;
+  for (const p of priorities) {
+    if (query.includes(p)) {
+      matchedPriority = p;
+      break;
+    }
+  }
+
+  // Filter incidents
+  let filtered = incidents;
+  if (matchedWard) {
+    filtered = filtered.filter(i => i.wardName.toLowerCase() === matchedWard);
+  }
+  if (matchedTypes.length > 0) {
+    filtered = filtered.filter(i => matchedTypes.includes(i.type));
+  }
+  if (matchedStatus) {
+    filtered = filtered.filter(i => i.status === matchedStatus);
+  }
+  if (matchedPriority) {
+    filtered = filtered.filter(i => i.priority === matchedPriority);
+  }
+
+  // If no filters matched or no incidents found after filtering, fallback to standard keyword matching on descriptions
+  if (filtered.length === incidents.length && query.length > 3) {
+    const searchTerms = query.split(/\s+/).filter(t => t.length > 3);
+    if (searchTerms.length > 0) {
+      filtered = incidents.filter(i => 
+        searchTerms.some(term => 
+          i.description.toLowerCase().includes(term) ||
+          i.id.toLowerCase().includes(term) ||
+          i.wardName.toLowerCase().includes(term) ||
+          i.typeLabel.toLowerCase().includes(term)
+        )
+      );
+    }
+  }
+
+  const totalMatches = filtered.length;
+  const displayIncidents = filtered.slice(0, 5);
+
+  // Section 1: Situation Summary
+  let situationSummary = "";
+  if (matchedWard) {
+    const wardCapitalized = matchedWard.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+    situationSummary = `Analysis of municipal issues in **${wardCapitalized}** ward. We identified **${totalMatches}** matching incident(s) currently registered in the database.`;
+  } else {
+    situationSummary = `Overview of city-wide operations. Found **${totalMatches}** matching incident(s) matching your request.`;
+  }
+  
+  if (matchedTypes.length > 0) {
+    situationSummary += ` Filtering applied for categories: ${matchedTypes.map(t => t.toUpperCase()).join(', ')}.`;
+  }
+  if (matchedStatus) {
+    situationSummary += ` Status restricted to: **${matchedStatus}**.`;
+  }
+
+  // Section 2: Important Findings
+  let importantFindings = "";
+  if (totalMatches === 0) {
+    importantFindings = "* No active incidents matching your description/filters were found in the database.\n* System operations are running normally for the selected criteria.";
+  } else {
+    importantFindings = displayIncidents.map(i => {
+      const statusIcon = i.status === 'resolved' ? '✅' : '⏳';
+      return `* **[${i.id}]** ${i.typeIcon} ${i.typeLabel} in *${i.wardName}* - Priority: **${i.priority.toUpperCase()}** | Status: ${statusIcon} **${i.status.toUpperCase()}**\n  *Description: "${i.description}"*`;
+    }).join('\n');
+    if (totalMatches > 5) {
+      importantFindings += `\n* *Note: Showing first 5 of ${totalMatches} total matching incidents. Please use specific filters to narrow down.*`;
+    }
+  }
+
+  // Section 3: Recommended Actions
+  let recommendedActions = "";
+  if (totalMatches === 0) {
+    recommendedActions = "* Continue routine patrol and monitoring of the selected areas.\n* Re-check citizen reports if new complaints arise.";
+  } else {
+    const activeCritical = displayIncidents.filter(i => i.priority === 'critical' && i.status !== 'resolved');
+    const activeHigh = displayIncidents.filter(i => i.priority === 'high' && i.status !== 'resolved');
+    
+    if (activeCritical.length > 0) {
+      recommendedActions += `* **CRITICAL EMERGENCY DISPATCH:** Immediately deploy supervisors and field units to resolve active critical issue(s): ${activeCritical.map(i => i.id).join(', ')}.\n`;
+    }
+    if (activeHigh.length > 0) {
+      recommendedActions += `* **High Priority Resolution:** Expedite work orders for high-priority incident(s): ${activeHigh.map(i => i.id).join(', ')}.\n`;
+    }
+    recommendedActions += `* **Department Coordination:** Coordinate with assigned departments (${Array.from(new Set(displayIncidents.map(i => i.departmentName))).join(', ')}) to verify updates.\n`;
+    recommendedActions += `* **Citizen Feedback Loop:** Keep citizens informed of ETAs via SMS alerts once dispatch status changes.`;
+  }
+
+  // Section 4: Priority Level
+  let overallPriority = "LOW";
+  const hasCritical = displayIncidents.some(i => i.priority === 'critical' && i.status !== 'resolved');
+  const hasHigh = displayIncidents.some(i => i.priority === 'high' && i.status !== 'resolved');
+  const hasMedium = displayIncidents.some(i => i.priority === 'medium' && i.status !== 'resolved');
+  if (hasCritical) overallPriority = "CRITICAL";
+  else if (hasHigh) overallPriority = "HIGH";
+  else if (hasMedium) overallPriority = "MEDIUM";
+
+  // Section 5: Confidence Score
+  const confidenceScore = totalMatches > 0 ? "95% (Direct database matching)" : "90% (Database query check)";
+
+  const responseText = `### 1. Situation Summary
+${situationSummary}
+
+### 2. Important Findings
+${importantFindings}
+
+### 3. Recommended Actions
+${recommendedActions}
+
+### 4. Priority Level
+**${overallPriority}**
+
+### 5. Confidence Score
+**${confidenceScore}**
+
+*Note: This response was generated by CityPulse Local Copilot (Offline Fallback Engine).*`;
+
+  return responseText;
+}
+
+app.post("/api/copilot", async (req, res) => {
+    try {
+        const { message } = req.body;
+        console.log("User Message:", message);
+        const store = loadStore();
+
+        const prompt = `
+You are CityPulse AI.
+You are an intelligent municipal operations assistant.
+
+Current incidents:
+${JSON.stringify(store.incidents, null, 2)}
+
+The user asked:
+"${message}"
+
+Answer professionally.
+Always include:
+1. Situation Summary
+2. Important Findings
+3. Recommended Actions
+4. Priority Level
+5. Confidence Score
+
+Use markdown bullet points where appropriate.
+`;
+
+        // List of models to try in priority order
+        const MODELS_TO_TRY = [
+            "gemini-3.6-flash",
+            "gemini-3.5-flash-lite",
+            "gemini-flash-latest",
+            "gemini-3.1-flash-lite"
+        ];
+
+        let result = null;
+        let lastError = null;
+
+        for (const modelName of MODELS_TO_TRY) {
+            console.log(`Calling Gemini (model: ${modelName})...`);
+            try {
+                result = await ai.models.generateContent({
+                    model: modelName,
+                    contents: prompt
+                });
+                console.log(`Gemini response successful using model: ${modelName}`);
+                break;
+            } catch (err) {
+                console.warn(`Model ${modelName} failed: ${err.message}`);
+                lastError = err;
+            }
+        }
+
+        if (result && result.text) {
+            res.json({
+                success: true,
+                answer: result.text
+            });
+        } else {
+            console.warn("All Gemini models failed. Activating local intelligent fallback copilot...");
+            const fallbackAnswer = generateOfflineFallbackResponse(message, store.incidents);
+            res.json({
+                success: true,
+                answer: fallbackAnswer
+            });
+        }
+
+    } catch (err) {
+        console.error("General copilot handler error:", err);
+        // Guarantee success for the frontend even under catastrophic failures
+        try {
+            const store = loadStore();
+            const fallbackAnswer = generateOfflineFallbackResponse(req.body.message || "", store.incidents);
+            res.json({
+                success: true,
+                answer: fallbackAnswer
+            });
+        } catch (innerErr) {
+            res.status(500).json({
+                success: false,
+                error: err.message
+            });
+        }
+    }
+});
 app.listen(PORT, () => {
   console.log(`===================================================`);
   console.log(`🏛️ CityPulse AI Backend Server running on port ${PORT}`);

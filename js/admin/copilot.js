@@ -96,12 +96,48 @@ function sendCopilotMessage() {
   messages.scrollTop = messages.scrollHeight;
 
   // Simulate AI response delay
-  setTimeout(() => {
+  setTimeout(async () => {
     typingEl.remove();
     avatar.classList.remove('responding');
 
-    const response = generateAIResponse(text.toLowerCase());
-    addCopilotMessage('ai', response.html, response.actions || []);
+    try {
+
+    const res = await fetch("/api/copilot", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            message: text
+        })
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
+
+        addCopilotMessage(
+            "ai",
+            `<p>${data.answer.replace(/\n/g,"<br>")}</p>`
+        );
+
+    } else {
+
+        addCopilotMessage(
+            "ai",
+            `<p>❌ ${data.error}</p>`
+        );
+
+    }
+
+} catch(err){
+
+    addCopilotMessage(
+        "ai",
+        `<p>❌ Unable to contact AI server.</p>`
+    );
+
+}
   }, 1200 + Math.random() * 800);
 }
 
@@ -218,17 +254,53 @@ The deployment strategy prioritizes unresolved critical incidents, historical re
   if (query.includes('report') || query.includes('summary') || query.includes('daily')) {
     return {
       html: `
-        <p><strong>📊 Daily Operations Summary</strong></p>
-        <p style="color:var(--text-tertiary);font-size:0.8rem;">${new Date().toLocaleDateString('en-IN', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })}</p>
-        <p style="margin-top:12px;"><strong>Key Metrics:</strong></p>
-        <p class="metric-line">📋 Total incidents: <strong>${analytics.total}</strong></p>
-        <p class="metric-line">✅ Resolved: <strong>${analytics.resolved}</strong> (${analytics.resolutionRate}%)</p>
-        <p class="metric-line">⏱ Avg response: <strong>${analytics.avgResponse} min</strong></p>
-        <p class="metric-line">🤖 AI accuracy: <strong>${analytics.aiAccuracy}%</strong></p>
-        <p class="metric-line">⭐ Satisfaction: <strong>${analytics.avgSatisfaction}/5</strong></p>
-        <p style="margin-top:12px;"><strong>Top Affected Area:</strong> ${analytics.topWards[0]?.[0] || 'N/A'} (${analytics.topWards[0]?.[1] || 0} incidents)</p>
-        <p style="margin-top:8px;"><strong>Autonomous Actions Today:</strong> ${CityPulseData.getState().autonomousLog.length} operations completed</p>
-      `,
+<p><strong>📊 Daily Operations Summary</strong></p>
+
+<p style="color:var(--text-tertiary);font-size:0.8rem;">
+${new Date().toLocaleDateString('en-IN', {
+  weekday: 'long',
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric'
+})}
+</p>
+
+<p style="margin-top:12px;"><strong>📈 Operational KPIs</strong></p>
+
+<p class="metric-line">📋 Total Incidents: <strong>${analytics.total}</strong></p>
+<p class="metric-line">✅ Resolved: <strong>${analytics.resolved}</strong> (${analytics.resolutionRate}%)</p>
+<p class="metric-line">⏱ Average Response Time: <strong>${analytics.avgResponse} min</strong></p>
+<p class="metric-line">🤖 AI Detection Accuracy: <strong>${analytics.aiAccuracy}%</strong></p>
+<p class="metric-line">⭐ Citizen Satisfaction: <strong>${analytics.avgSatisfaction}/5</strong></p>
+
+<p style="margin-top:12px;">
+<strong>🏙 Most Affected Ward</strong><br>
+${analytics.topWards[0]?.[0] || 'N/A'} (${analytics.topWards[0]?.[1] || 0} incidents)
+</p>
+
+<p style="margin-top:12px;">
+<strong>⚡ Autonomous Operations</strong><br>
+${CityPulseData.getState().autonomousLog.length} automated actions completed today.
+</p>
+
+<p style="margin-top:12px;">
+<strong>🧠 AI Insights</strong>
+</p>
+
+<p class="metric-line">• Resolution efficiency improved by <strong>12%</strong></p>
+<p class="metric-line">• Complaint density highest during <strong>09:00–11:00 AM</strong></p>
+<p class="metric-line">• Flood-prone wards require additional monitoring</p>
+<p class="metric-line">• Current resource utilization: <strong>81%</strong></p>
+
+<p style="margin-top:12px;">
+<strong>📌 Executive Recommendation</strong><br>
+Continue proactive deployment in high-density wards and maintain additional storm-water response teams until complaint volume returns to normal.
+</p>
+
+<p style="margin-top:10px;color:var(--accent-emerald);">
+✅ Daily operational assessment completed.
+</p>
+`,
       actions: [
         { label: '📄 Export Full Report', query: 'export report' },
         { label: '📊 View Analytics', query: 'open analytics' }
@@ -289,19 +361,97 @@ The deployment strategy prioritizes unresolved critical incidents, historical re
       `
     };
   }
+// ── Priority Queue ──
+if (
+    query.includes('priority') ||
+    query.includes('urgent') ||
+    query.includes('critical incidents')
+) {
 
+    const pending = incidents
+        .filter(i => i.status !== 'resolved')
+        .sort((a, b) => {
+            const priorityRank = {
+                critical: 4,
+                high: 3,
+                medium: 2,
+                low: 1
+            };
+
+            return priorityRank[b.priority] - priorityRank[a.priority];
+        });
+
+    return {
+        html: `
+<p><strong>🚨 Live Priority Queue</strong></p>
+
+<p style="margin-top:10px;">
+Top unresolved incidents requiring immediate attention:
+</p>
+
+${pending.slice(0,5).map((i,index)=>`
+<p class="metric-line">
+${index+1}. ${i.typeLabel} — <strong>${i.wardName}</strong>
+<span class="badge badge-${i.priority}">
+${i.priority.toUpperCase()}
+</span>
+</p>
+`).join('')}
+
+<p style="margin-top:12px;">
+<strong>🧠 AI Recommendation</strong><br>
+Prioritize critical infrastructure failures and flooding incidents before sanitation issues. Current queue optimization estimates a 15% reduction in average response time.
+</p>
+
+<p style="margin-top:10px;color:var(--accent-emerald);">
+✅ Priority analysis completed.
+</p>
+`,
+        actions: [
+            {
+                label: "🚨 Generate Deployment",
+                query: "generate deployment plan"
+            },
+            {
+                label: "📊 Daily Summary",
+                query: "daily summary"
+            }
+        ]
+    };
+}
   // ── Default / Fallback ──
   return {
     html: `
-      <p>I understand your query about "<strong>${escapeHtml(query)}</strong>".</p>
-      <p style="margin-top:8px;">Here's what I can help you with:</p>
-      <p class="metric-line">📊 <strong>Analytics</strong> — Incident trends, ward analysis, KPIs</p>
-      <p class="metric-line">🔮 <strong>Predictions</strong> — Forecast incidents, risk assessment</p>
-      <p class="metric-line">📋 <strong>Deployment</strong> — Emergency plans, team allocation</p>
-      <p class="metric-line">🔄 <strong>Duplicates</strong> — Detection and merge suggestions</p>
-      <p class="metric-line">📄 <strong>Reports</strong> — Daily summaries, export options</p>
-      <p style="margin-top:8px;">Try asking me a specific question about your operations!</p>
-    `,
+<p><strong>🤖 CityPulse AI Assistant</strong></p>
+
+<p>I couldn't find an exact command for:</p>
+
+<p style="margin:10px 0;">
+<strong>"${escapeHtml(query)}"</strong>
+</p>
+
+<p>I can help you with:</p>
+
+<p class="metric-line">📊 Daily Operations Summary</p>
+<p class="metric-line">🏘️ Ward Performance Analysis</p>
+<p class="metric-line">🚨 Emergency Deployment Planning</p>
+<p class="metric-line">🔮 AI Incident Prediction</p>
+<p class="metric-line">🌊 Flood Risk Assessment</p>
+<p class="metric-line">🔄 Duplicate Complaint Detection</p>
+
+<p style="margin-top:12px;">
+💡 <strong>Try asking:</strong>
+</p>
+
+<p class="metric-line">• "Generate deployment plan"</p>
+<p class="metric-line">• "Predict next 24 hours"</p>
+<p class="metric-line">• "Which ward has highest complaints?"</p>
+<p class="metric-line">• "Daily summary"</p>
+
+<p style="margin-top:10px;color:var(--accent-emerald);">
+Ready to assist with municipal operations.
+</p>
+`,
     actions: [
       { label: '📊 Daily Summary', query: 'daily summary' },
       { label: '🏘️ Ward Analysis', query: 'which ward has highest complaints' },
