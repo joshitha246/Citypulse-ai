@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CityPulse AI Citizen Portal — Submit complaints, track incidents, and receive emergency alerts.">
+  <title>CityPulse AI — Citizen Portal</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/citizen.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>">
+</head>
+<body>
+  <div class="citizen-page">
+    <div class="phone-frame">
+      <!-- Notch -->
+      <div class="phone-notch"></div>
+
+      <!-- Status Bar -->
+      <div class="phone-statusbar">
+        <span id="status-time">9:41</span>
+        <span>CityPulse AI</span>
+        <span>🔋 87%</span>
+      </div>
+
+      <!-- Header -->
+      <div class="citizen-header">
+        <div class="citizen-header-logo">🏛️</div>
+        <div class="citizen-header-info">
+          <h2>CityPulse AI</h2>
+          <p id="citizen-greeting">Welcome, Citizen</p>
+        </div>
+        <button class="citizen-header-notif" id="citizen-notif-btn">
+          🔔
+          <span class="notif-dot"></span>
+        </button>
+        <button class="citizen-logout" onclick="CityPulseAuth.logout()" title="Logout">🚪</button>
+      </div>
+
+      <!-- Content -->
+      <div class="citizen-content">
+        <!-- Tab: Submit Complaint -->
+        <div class="citizen-tab-content active" id="tab-submit">
+          <div class="section-header">📝 Submit Complaint</div>
+
+          <div class="complaint-form" id="complaint-form">
+            <!-- Category Selection -->
+            <div class="input-group">
+              <label class="input-label">Category</label>
+              <div class="category-grid" id="category-grid"></div>
+            </div>
+
+            <!-- Description -->
+            <div class="input-group">
+              <label class="input-label">Description</label>
+              <textarea class="input-field" id="complaint-desc" placeholder="Describe the issue in detail..." style="min-height:80px;"></textarea>
+            </div>
+
+            <!-- Location -->
+            <div class="input-group">
+              <label class="input-label">📍 Location</label>
+              <div class="location-picker">
+                <div id="citizen-mini-map"></div>
+              </div>
+              <input type="text" class="input-field" id="complaint-location" placeholder="Or type address..." style="margin-top:var(--space-xs);font-size:0.8rem;">
+            </div>
+
+            <!-- Photo Upload -->
+            <div class="input-group">
+              <label class="input-label">📷 Photo Evidence</label>
+              <div class="upload-area" id="upload-area" onclick="simulateUpload()">
+                <div id="upload-content">
+                  📸 Tap to upload photo<br>
+                  <span style="font-size:0.7rem;color:var(--text-muted);">Supports JPG, PNG (max 5MB)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Voice -->
+            <button class="voice-btn" id="voice-btn" onclick="toggleVoice()">
+              🎙️ <span id="voice-label">Voice Complaint</span>
+            </button>
+
+            <!-- Submit -->
+            <button class="btn btn-primary btn-lg" onclick="submitComplaint()" style="width:100%;">
+              📩 Submit Complaint
+            </button>
+          </div>
+
+          <!-- Success State (hidden by default) -->
+          <div class="success-animation" id="submit-success" style="display:none;">
+            <div class="success-checkmark">✅</div>
+            <div class="success-title">Complaint Submitted!</div>
+            <div class="success-text">Your complaint has been received and AI has auto-classified it.</div>
+            <div class="success-id" id="success-ticket-id">INC-XXX</div>
+            <div style="margin-top:var(--space-md);display:flex;gap:8px;justify-content:center;flex-wrap:wrap;">
+              <button class="btn-share" onclick="shareSubmittedComplaint()">🔗 Share Link</button>
+              <button class="btn-download" onclick="downloadSubmittedReceipt()">📥 Download Receipt</button>
+            </div>
+            <button class="btn btn-secondary" onclick="resetComplaintForm()" style="margin-top:var(--space-lg);">
+              Submit Another
+            </button>
+          </div>
+        </div>
+
+        <!-- Tab: My Complaints -->
+        <div class="citizen-tab-content" id="tab-complaints">
+          <div class="section-header">📋 My Complaints</div>
+          <div id="my-complaints-list"></div>
+        </div>
+
+        <!-- Tab: Nearby -->
+        <div class="citizen-tab-content" id="tab-nearby">
+          <div class="section-header">📍 Nearby Incidents</div>
+          <div class="location-picker" style="height:250px;margin-bottom:var(--space-md);">
+            <div id="nearby-map"></div>
+          </div>
+          <div id="nearby-list"></div>
+        </div>
+
+        <!-- Tab: Alerts -->
+        <div class="citizen-tab-content" id="tab-alerts">
+          <div class="section-header">🚨 Alerts & Notifications</div>
+          <div id="alerts-list"></div>
+        </div>
+      </div>
+
+      <!-- Bottom Tab Bar -->
+      <div class="citizen-tabs">
+        <button class="citizen-tab active" data-tab="submit" onclick="switchTab('submit')">
+          <span class="tab-icon">📝</span>
+          Submit
+        </button>
+        <button class="citizen-tab" data-tab="complaints" onclick="switchTab('complaints')">
+          <span class="tab-icon">📋</span>
+          My Reports
+        </button>
+        <button class="citizen-tab" data-tab="nearby" onclick="switchTab('nearby')">
+          <span class="tab-icon">📍</span>
+          Nearby
+        </button>
+        <button class="citizen-tab" data-tab="alerts" onclick="switchTab('alerts')">
+          <span class="tab-icon">🚨</span>
+          Alerts
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/citizen/panel.js"></script>
+  <script src="js/citizen/complaints.js"></script>
+  <script src="js/citizen/nearby.js"></script>
+</body>
+</html>

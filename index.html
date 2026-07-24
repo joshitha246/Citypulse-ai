@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CityPulse AI — AI-Powered Municipal Incident Management Dashboard. Smart city governance for Bangalore.">
+  <title>CityPulse AI — Login</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>">
+</head>
+<body>
+  <!-- Background Effects -->
+  <div class="particles">
+    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+  </div>
+  <div class="grid-overlay"></div>
+
+  <div class="login-page">
+    <div class="login-container">
+
+      <!-- Logo -->
+      <div class="login-logo">
+        <div class="logo-icon">🏛️</div>
+        <h1 class="logo-title">CityPulse AI</h1>
+        <p class="logo-subtitle">AI-Powered Municipal Intelligence</p>
+        <p class="logo-division">Bruhat Bengaluru Mahanagara Palike (BBMP)</p>
+      </div>
+
+      <!-- Profile Cards -->
+      <div class="profile-cards">
+
+        <!-- Admin Card -->
+        <div class="profile-card admin" id="admin-card">
+          <div class="profile-header">
+            <div class="profile-avatar">👩‍💼</div>
+            <div>
+              <div class="profile-name">Administrator</div>
+              <div class="profile-role">Dashboard Command Center</div>
+            </div>
+          </div>
+          <p class="profile-desc">
+            Full access to incident management, analytics, AI copilot, autonomous operations, and department coordination.
+          </p>
+          <form class="login-form" id="admin-form" onsubmit="return handleLogin(event, 'admin')">
+            <div class="input-group">
+              <label class="input-label" for="admin-email">Gmail Account</label>
+              <input type="email" class="input-field" id="admin-email" placeholder="admin@gmail.com" autocomplete="email" required>
+            </div>
+            <div class="input-group">
+              <label class="input-label" for="admin-password">Password</label>
+              <input type="password" class="input-field" id="admin-password" placeholder="Enter password" autocomplete="current-password" required>
+            </div>
+            <button type="submit" class="btn login-btn" id="admin-login-btn">
+              <span>🔐</span> Sign In as Admin
+            </button>
+            <div class="form-footer">
+              <button type="button" class="demo-btn" onclick="fillDemo('admin')">
+                ✨ Use Demo Credentials
+              </button>
+              <button type="button" class="forgot-btn" onclick="openForgotPassword('admin')">
+                🔑 Forgot Password?
+              </button>
+            </div>
+            <div class="error-text" id="admin-error" style="display:none;"></div>
+          </form>
+          <!-- Loading Overlay -->
+          <div class="login-loading" id="admin-loading">
+            <div class="spinner"></div>
+            <div class="login-loading-text">Authenticating via AI Gateway...</div>
+          </div>
+        </div>
+
+        <!-- Citizen Card -->
+        <div class="profile-card citizen" id="citizen-card">
+          <div class="profile-header">
+            <div class="profile-avatar">👤</div>
+            <div>
+              <div class="profile-name">Citizen</div>
+              <div class="profile-role">Complaint & Tracking Portal</div>
+            </div>
+          </div>
+          <p class="profile-desc">
+            Submit complaints, track incident status, view nearby issues, and receive emergency alerts from the city.
+          </p>
+
+          <!-- Citizen Login Form -->
+          <form class="login-form" id="citizen-login-form" onsubmit="return handleLogin(event, 'citizen')">
+            <div class="input-group">
+              <label class="input-label" for="citizen-email">Gmail Account</label>
+              <input type="email" class="input-field" id="citizen-email" placeholder="yourname@gmail.com" autocomplete="email" required>
+            </div>
+            <div class="input-group">
+              <label class="input-label" for="citizen-password">Password</label>
+              <input type="password" class="input-field" id="citizen-password" placeholder="Enter password" autocomplete="current-password" required>
+            </div>
+            <button type="submit" class="btn login-btn" id="citizen-login-btn">
+              <span>🔐</span> Sign In as Citizen
+            </button>
+            <div class="form-footer">
+              <button type="button" class="forgot-btn" onclick="openForgotPassword('citizen')">
+                🔑 Forgot Password?
+              </button>
+              <button type="button" class="register-toggle-btn" onclick="toggleCitizenMode('register')">
+                📝 New User? Register
+              </button>
+            </div>
+            <div class="error-text" id="citizen-error" style="display:none;"></div>
+          </form>
+
+          <!-- Citizen Register Form (hidden by default) -->
+          <form class="login-form" id="citizen-register-form" style="display:none;" onsubmit="return handleRegister(event)">
+            <div class="input-group">
+              <label class="input-label" for="register-name">Full Name</label>
+              <input type="text" class="input-field" id="register-name" placeholder="Enter your full name" required>
+            </div>
+            <div class="input-group">
+              <label class="input-label" for="register-email">Gmail Account</label>
+              <input type="email" class="input-field" id="register-email" placeholder="yourname@gmail.com" autocomplete="email" required>
+            </div>
+            <div class="input-group">
+              <label class="input-label" for="register-password">Create Password</label>
+              <input type="password" class="input-field" id="register-password" placeholder="Min. 6 characters" autocomplete="new-password" required minlength="6">
+            </div>
+            <button type="submit" class="btn login-btn" id="register-btn">
+              <span>📝</span> Create Account
+            </button>
+            <div class="form-footer">
+              <button type="button" class="register-toggle-btn" onclick="toggleCitizenMode('login')">
+                🔐 Already have an account? Sign In
+              </button>
+            </div>
+            <div class="error-text" id="register-error" style="display:none;"></div>
+            <div class="success-text" id="register-success" style="display:none;"></div>
+          </form>
+
+          <!-- Loading Overlay -->
+          <div class="login-loading" id="citizen-loading">
+            <div class="spinner"></div>
+            <div class="login-loading-text">Verifying citizen identity...</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- AI Auth Badge -->
+      <div class="ai-auth-badge">
+        <span>
+          <span class="shield-icon">🛡️</span>
+          Secured by AI Authentication Gateway — v3.2.1
+          <span class="connected-dot"></span>
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══════════ FORGOT PASSWORD MODAL ═══════════ -->
+  <div class="modal-overlay" id="forgot-modal">
+    <div class="forgot-modal-box">
+      <div class="forgot-header">
+        <span class="forgot-title">🔑 Forgot Password</span>
+        <button class="modal-close-btn" onclick="closeForgotPassword()">✕</button>
+      </div>
+
+      <!-- Step 1: Enter Email -->
+      <div id="forgot-step-email">
+        <p class="forgot-desc">Enter your registered Gmail address. We'll send a password reset link.</p>
+        <div class="input-group" style="margin-top:16px;">
+          <label class="input-label" for="forgot-email">Gmail Account</label>
+          <input type="email" class="input-field" id="forgot-email" placeholder="yourname@gmail.com" required>
+        </div>
+        <button class="btn btn-primary" onclick="handleForgotSubmit()" style="width:100%;margin-top:16px;">
+          📩 Send Reset Link
+        </button>
+        <div class="error-text" id="forgot-error" style="display:none;margin-top:8px;"></div>
+      </div>
+
+      <!-- Step 2: Success -->
+      <div id="forgot-step-success" style="display:none;text-align:center;">
+        <div style="font-size:2.5rem;margin-bottom:12px;">📧</div>
+        <div class="forgot-success-title">Reset Link Sent!</div>
+        <p class="forgot-success-msg" id="forgot-success-msg">Check your inbox for the password reset link.</p>
+        <p class="forgot-hint" id="forgot-hint"></p>
+        <button class="btn btn-secondary" onclick="closeForgotPassword()" style="margin-top:20px;">
+          ← Back to Login
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="version-info">CityPulse AI Platform v3.2.1 · Bangalore Smart City Initiative</div>
+
+  <script src="js/auth.js"></script>
+  <script>
+    // Redirect if already logged in
+    (function() {
+      const session = CityPulseAuth.getSession();
+      if (session) {
+        window.location.href = session.redirect;
+      }
+    })();
+
+    // ── Fill Demo Credentials ──
+    function fillDemo(role) {
+      if (role === 'admin') {
+        document.getElementById('admin-email').value = 'n.joshitha246@gmail.com';
+        document.getElementById('admin-password').value = 'Citypulse123';
+      }
+    }
+
+    // ── Toggle Citizen Login / Register ──
+    function toggleCitizenMode(mode) {
+      const loginForm = document.getElementById('citizen-login-form');
+      const registerForm = document.getElementById('citizen-register-form');
+      const errorEl = document.getElementById('citizen-error');
+      const regError = document.getElementById('register-error');
+      const regSuccess = document.getElementById('register-success');
+
+      errorEl.style.display = 'none';
+      regError.style.display = 'none';
+      regSuccess.style.display = 'none';
+
+      if (mode === 'register') {
+        loginForm.style.display = 'none';
+        registerForm.style.display = 'flex';
+      } else {
+        loginForm.style.display = 'flex';
+        registerForm.style.display = 'none';
+      }
+    }
+
+    // ── Handle Login ──
+    function handleLogin(event, role) {
+      event.preventDefault();
+
+      const emailEl = document.getElementById(role + '-email');
+      const passwordEl = document.getElementById(role + '-password');
+      const errorEl = document.getElementById(role + '-error');
+      const loadingEl = document.getElementById(role + '-loading');
+
+      errorEl.style.display = 'none';
+
+      const result = CityPulseAuth.login(emailEl.value.trim(), passwordEl.value);
+
+      if (result.success) {
+        // Verify role matches the card they used
+        if (role === 'admin' && result.user.role !== 'admin') {
+          errorEl.textContent = '⚠️ This account is a citizen account. Please use the Citizen card.';
+          errorEl.style.display = 'block';
+          return false;
+        }
+        if (role === 'citizen' && result.user.role !== 'citizen') {
+          errorEl.textContent = '⚠️ This account is an admin account. Please use the Administrator card.';
+          errorEl.style.display = 'block';
+          return false;
+        }
+
+        // Show loading animation
+        loadingEl.classList.add('active');
+
+        // Redirect after animation
+        setTimeout(() => {
+          window.location.href = result.user.redirect;
+        }, 1800);
+      } else {
+        // Shake and show error
+        const card = document.getElementById(role + '-card');
+        card.classList.add('shake');
+        setTimeout(() => card.classList.remove('shake'), 500);
+
+        errorEl.textContent = '⚠️ ' + (result.error || 'Invalid credentials.');
+        errorEl.style.display = 'block';
+      }
+
+      return false;
+    }
+
+    // ── Handle Citizen Registration ──
+    function handleRegister(event) {
+      event.preventDefault();
+
+      const name = document.getElementById('register-name').value.trim();
+      const email = document.getElementById('register-email').value.trim();
+      const password = document.getElementById('register-password').value;
+      const errorEl = document.getElementById('register-error');
+      const successEl = document.getElementById('register-success');
+
+      errorEl.style.display = 'none';
+      successEl.style.display = 'none';
+
+      const result = CityPulseAuth.registerCitizen(email, password, name);
+
+      if (result.success) {
+        successEl.textContent = '✅ Account created successfully! Switching to login...';
+        successEl.style.display = 'block';
+
+        // Auto-switch to login with filled email
+        setTimeout(() => {
+          toggleCitizenMode('login');
+          document.getElementById('citizen-email').value = email;
+          document.getElementById('citizen-password').focus();
+        }, 1500);
+      } else {
+        const card = document.getElementById('citizen-card');
+        card.classList.add('shake');
+        setTimeout(() => card.classList.remove('shake'), 500);
+
+        errorEl.textContent = '⚠️ ' + result.error;
+        errorEl.style.display = 'block';
+      }
+
+      return false;
+    }
+
+    // ── Forgot Password ──
+    let forgotRole = '';
+
+    function openForgotPassword(role) {
+      forgotRole = role;
+      document.getElementById('forgot-modal').classList.add('active');
+      document.getElementById('forgot-step-email').style.display = 'block';
+      document.getElementById('forgot-step-success').style.display = 'none';
+      document.getElementById('forgot-error').style.display = 'none';
+      document.getElementById('forgot-email').value = '';
+      document.getElementById('forgot-email').focus();
+    }
+
+    function closeForgotPassword() {
+      document.getElementById('forgot-modal').classList.remove('active');
+    }
+
+    function handleForgotSubmit() {
+      const email = document.getElementById('forgot-email').value.trim();
+      const errorEl = document.getElementById('forgot-error');
+      errorEl.style.display = 'none';
+
+      const result = CityPulseAuth.forgotPassword(email);
+
+      if (result.success) {
+        document.getElementById('forgot-step-email').style.display = 'none';
+        document.getElementById('forgot-step-success').style.display = 'block';
+        document.getElementById('forgot-success-msg').textContent = result.message;
+        if (result.hint) {
+          document.getElementById('forgot-hint').textContent = '💡 ' + result.hint;
+          document.getElementById('forgot-hint').style.display = 'block';
+        }
+      } else {
+        errorEl.textContent = '⚠️ ' + result.error;
+        errorEl.style.display = 'block';
+      }
+    }
+
+    // Close modal on outside click
+    document.getElementById('forgot-modal').addEventListener('click', function(e) {
+      if (e.target === this) closeForgotPassword();
+    });
+
+    // Enter key on forgot email field
+    document.getElementById('forgot-email').addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') { e.preventDefault(); handleForgotSubmit(); }
+    });
+  </script>
+</body>
+</html>
